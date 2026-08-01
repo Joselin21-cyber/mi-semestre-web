@@ -1,19 +1,324 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi Proyecto Semestral</title>
-    <style>
-        body { background: #0f172a; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; text-align: center; }
-        .card { padding: 2rem; border: 1px solid #334155; border-radius: 15px; background: #1e293b; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
-        h1 { color: #60a5fa; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Académico - Joselin Gonzalez</title>
+  <style>
+    :root {
+      --primary-color: #0d9488;
+      --primary-hover: #0f766e;
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --header-bg: #0f172a;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    /* Barra de Navegación */
+    header {
+      background: var(--header-bg);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #38bdf8;
+    }
+
+    .logo-badge {
+      background: #0284c7;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* Contenedor Principal */
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Sección Inicio / Perfil Principal */
+    .hero-profile {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 3rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border-color);
+      margin-bottom: 2.5rem;
+    }
+
+    .avatar-container {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 1.5rem auto;
+      border-radius: 50%;
+      border: 4px solid var(--primary-color);
+      overflow: hidden;
+      background: #f1f5f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .avatar-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-profile h1 {
+      font-size: 2.2rem;
+      color: var(--header-bg);
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .biografia-box {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #f8fafc;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 4px solid var(--primary-color);
+      text-align: left;
+    }
+
+    .biografia-box h3 {
+      color: var(--header-bg);
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .biografia-box p {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+
+    /* Secciones de Unidades */
+    .section-title {
+      font-size: 1.6rem;
+      color: var(--header-bg);
+      margin: 2.5rem 0 1.5rem 0;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .unidades-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card-unidad {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 1.8rem;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card-unidad:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .unidad-tag {
+      display: inline-block;
+      background: #ccfbf1;
+      color: #0f766e;
+      font-size: 0.8rem;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+
+    .card-unidad h3 {
+      color: var(--header-bg);
+      margin-bottom: 0.8rem;
+    }
+
+    .card-unidad p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Sección Bibliografía */
+    .bibliografia-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 1.8rem;
+      border: 1px solid var(--border-color);
+    }
+
+    .bibliografia-list {
+      list-style-type: none;
+    }
+
+    .bibliografia-list li {
+      padding: 0.8rem 0;
+      border-bottom: 1px dashed var(--border-color);
+      color: var(--text-main);
+      font-size: 0.95rem;
+    }
+
+    .bibliografia-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--header-bg);
+      color: #94a3b8;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-    <div class="card">
-        <h1>¡Bienvenido a mi Proyecto!</h1>
-        <p>Resumen de actividades del semestre</p>
-        <p><strong>Estudiante:</strong>[Joselin Gonzalez] <div =""></div></p>
+
+  <!-- Encabezado con LOGO e INICIO, UN1, UN2, UN3 -->
+  <header>
+    <div class="nav-container">
+      <div class="logo-area">
+        <span class="logo-badge">UTC</span>
+        <span>Portafolio</span>
+      </div>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#unidad1">UN1</a>
+        <a href="#unidad2">UN2</a>
+        <a href="#unidad3">UN3</a>
+        <a href="#bibliografia">Bibliografía</a>
+      </nav>
     </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Sección INICIO: Foto, Nombre y Biografía -->
+    <section id="inicio" class="hero-profile">
+      <div class="avatar-container">
+        <!-- Reemplaza "foto.jpg" por la ruta o nombre de tu archivo de foto -->
+        <img src="foto.jpg" alt="Foto de perfil" onerror="this.src='https://via.placeholder.com/150/0d9488/ffffff?text=Tu+Foto'">
+      </div>
+      <h1>Joselin Paola Gonzalez Agualongo</h1>
+      <p class="subtitle">Estudiante de Ingeniería en Software</p>
+
+      <div class="biografia-box">
+        <h3>Biografía</h3>
+        <p>
+          ¡Hola! Soy estudiante de la Universidad Técnica de Cotopaxi. Bienvenido/a a mi portafolio digital, un espacio donde presento los proyectos, ejercicios prácticos y temas clave desarrollados a lo largo del semestre académico.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección Unidades Académicas -->
+    <h2 class="section-title">Contenidos del Semestre</h2>
+    
+    <div class="unidades-grid">
+      <!-- UNIDAD 1 -->
+      <div class="card-unidad" id="unidad1">
+        <span class="unidad-tag">UNIDAD 1</span>
+        <h3>Fundamentos y Lógica</h3>
+        <p>Introducción a la lógica de programación, diagramas de flujo (DFD), tablas de verdad y resolución de algoritmos secuenciales.</p>
+      </div>
+
+      <!-- UNIDAD 2 -->
+      <div class="card-unidad" id="unidad2">
+        <span class="unidad-tag">UNIDAD 2</span>
+        <h3>Estructuras y Algoritmos</h3>
+        <p>Uso de estructuras condicionales, ciclos iterativos, manejo de variables, operadores lógicos y funciones básicas.</p>
+      </div>
+
+      <!-- UNIDAD 3 -->
+      <div class="card-unidad" id="unidad3">
+        <span class="unidad-tag">UNIDAD 3</span>
+        <h3>Desarrollo Web Integrador</h3>
+        <p>Diseño y maquetación de páginas web interactivas con HTML5, CSS3, integración con Git y publicación en GitHub Pages.</p>
+      </div>
+    </div>
+
+    <!-- Sección Bibliografía -->
+    <h2 class="section-title" id="bibliografia">Bibliografía</h2>
+    <div class="bibliografia-card">
+      <ul class="bibliografia-list">
+        <li>📖 Joyanes Aguilar, L. (2020). <i>Fundamentos de Programación: Algoritmos y Estructuras de Datos</i>. McGraw-Hill.</li>
+        <li>📖 MDN Web Docs. (2026). <i>Documentación oficial de HTML5, CSS3 y JavaScript</i>. Mozilla Developer Network.</li>
+        <li>📖 Git Documentation. (2026). <i>Guía oficial de control de versiones y GitHub Pages</i>.</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Joselin Gonzalez | Universidad Técnica de Cotopaxi</p>
+  </footer>
+
 </body>
 </html>
