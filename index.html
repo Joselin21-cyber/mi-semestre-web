@@ -1,135 +1,289 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi Página Personal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyecto Final</title>
 
-    <style>
-        body{
-            margin:0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(to right, #87CEEB, #E6E6FA);
-        }
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-        header{
-            background:#4B0082;
-            color:white;
-            text-align:center;
-            padding:25px;
-        }
+<style>
 
-        nav{
-            background:#6A5ACD;
-            text-align:center;
-            padding:15px;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:15px;
-            font-weight:bold;
-        }
+body{
+background:linear-gradient(135deg,#b8d8ff,#e6d5ff,#ffd6f3);
+}
 
-        section{
-            width:80%;
-            margin:auto;
-            background:white;
-            margin-top:20px;
-            padding:20px;
-            border-radius:10px;
-            box-shadow:0px 0px 10px gray;
-        }
+header{
+width:95%;
+margin:20px auto;
+background:white;
+border-radius:15px;
+padding:20px;
+box-shadow:0px 5px 15px rgba(0,0,0,.15);
+}
 
-        img{
-            display:block;
-            margin:auto;
-            width:220px;
-            height:220px;
-            border-radius:50%;
-            border:5px solid #4B0082;
-        }
+nav{
+display:flex;
+justify-content:center;
+gap:40px;
+}
 
-        h2{
-            color:#4B0082;
-        }
+nav a{
+text-decoration:none;
+font-weight:bold;
+color:#5a35b5;
+font-size:18px;
+}
 
-        .estrellas{
-            color:gold;
-            font-size:28px;
-        }
+.contenedor{
+width:95%;
+margin:auto;
+}
 
-        footer{
-            background:#4B0082;
-            color:white;
-            text-align:center;
-            padding:15px;
-            margin-top:20px;
-        }
-    </style>
+.inicio{
+background:white;
+padding:30px;
+border-radius:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+box-shadow:0px 5px 15px rgba(0,0,0,.15);
+}
+
+.foto{
+text-align:center;
+}
+
+.foto img{
+width:250px;
+height:250px;
+border-radius:50%;
+border:6px solid #8a5cff;
+object-fit:cover;
+}
+
+.foto h2{
+margin-top:15px;
+color:#6b38d1;
+}
+
+.foto h3{
+color:#ff5e9c;
+}
+
+.info{
+width:55%;
+}
+
+.info h1{
+color:#4b2ca3;
+margin-bottom:20px;
+}
+
+.info p{
+margin:12px 0;
+font-size:18px;
+}
+
+.unidades{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0px 5px 15px rgba(0,0,0,.15);
+margin-bottom:30px;
+}
+
+.unidades h1{
+text-align:center;
+color:#673ab7;
+margin-bottom:25px;
+}
+
+.tarjetas{
+display:flex;
+gap:20px;
+justify-content:center;
+}
+
+.card{
+width:300px;
+background:#fafafa;
+padding:20px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.card h2{
+color:#5d35d1;
+margin-bottom:15px;
+}
+
+.estrellas{
+font-size:35px;
+margin-top:15px;
+}
+
+.amarilla{
+color:gold;
+}
+
+.gris{
+color:#ccc;
+}
+
+.bio{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0px 5px 15px rgba(0,0,0,.15);
+margin-bottom:30px;
+}
+
+.bio h1{
+color:#673ab7;
+margin-bottom:20px;
+}
+
+.bio p{
+font-size:18px;
+line-height:1.8;
+text-align:justify;
+}
+
+footer{
+background:#673ab7;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+</style>
 
 </head>
 
 <body>
 
 <header>
-    <h1>Mi Página Personal</h1>
-</header>
 
 <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#datos">Datos</a>
-    <a href="#unidades">Unidades</a>
-    <a href="#bibliografia">Bibliografía</a>
+<a href="#inicio">Inicio</a>
+<a href="#unidades">Unidades</a>
+<a href="#bio">Biografía</a>
 </nav>
 
-<section id="inicio">
-    <h2>Inicio</h2>
+</header>
 
-    <!-- Cambia "foto.jpg" por el nombre de tu fotografía -->
-    <img src="foto.jpg" alt="Mi Foto">
+<div class="contenedor">
 
-    <p style="text-align:center;">
-        Bienvenido(a) a mi página web personal.
-    </p>
+<section class="inicio" id="inicio">
+
+<div class="foto">
+
+<img src="foto.jpg">
+
+<h2>Joselin Paola</h2>
+<h3>González Agualongo</h3>
+
+</div>
+
+<div class="info">
+
+<h1>Universidad Técnica de Cotopaxi</h1>
+
+<p><b>Facultad:</b> Ciencias de las Ingenierías y Aplicadas</p>
+
+<p><b>Carrera:</b> Ingeniería en Software</p>
+
+<p><b>Nivel:</b> Nivelación</p>
+
+<p><b>Asignatura:</b> Programación y Algoritmia</p>
+
+<p><b>Profesor:</b> Ing. René Quisaguano</p>
+
+</div>
+
 </section>
 
-<section id="datos">
-    <h2>Mis Datos</h2>
+<section class="unidades" id="unidades">
 
-    <p><strong>Nombre:</strong> Joselin Paola</p>
-    <p><strong>Apellido:</strong> González Agualongo</p>
+<h1>Unidades de Estudio</h1>
+
+<div class="tarjetas">
+
+<div class="card">
+
+<h2>Unidad 1</h2>
+
+<p>Calificación: 3.5</p>
+
+<div class="estrellas">
+<span class="amarilla">★ ★ ★</span><span class="amarilla">☆</span><span class="gris">☆</span>
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Unidad 2</h2>
+
+<p>Calificación: 4.5</p>
+
+<div class="estrellas">
+<span class="amarilla">★ ★ ★ ★</span><span class="amarilla">☆</span>
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Unidad 3</h2>
+
+<p>Calificación: 2.0</p>
+
+<div class="estrellas">
+<span class="amarilla">★ ★</span><span class="gris">☆ ☆ ☆</span>
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section id="unidades">
-    <h2>Unidades</h2>
+<section class="bio" id="bio">
 
-    <h3>Unidad 1</h3>
-    <p class="estrellas">★★★★★</p>
+<h1>Mi Biografía</h1>
 
-    <h3>Unidad 2</h3>
-    <p class="estrellas">★★★★★</p>
+<p>
+¡Hola! Soy <b>Joselin Paola González Agualongo</b>. Tengo 21 años y actualmente estudio Ingeniería en Software en la Universidad Técnica de Cotopaxi. Me gusta aprender cosas nuevas, especialmente todo lo relacionado con la tecnología y la programación. Siempre trato de dar lo mejor de mí en cada proyecto, porque me encanta superar nuevos retos y seguir creciendo tanto en lo académico como en lo personal.
+</p>
 
-    <h3>Unidad 3</h3>
-    <p class="estrellas">★★★★★</p>
+<br>
+
+<p>
+En mi tiempo libre disfruto escuchar música, salir con mis amigos, pasar tiempo con mi familia y descubrir nuevas herramientas tecnológicas. Mi meta es convertirme en una gran profesional, crear proyectos innovadores y demostrar que con esfuerzo, dedicación y creatividad se pueden lograr grandes cosas.
+</p>
+
 </section>
 
-<section id="bibliografia">
-    <h2>Mi Biografia</h2>
-
-    <p>
-        Mi nombre es <strong>Joselin Paola González Agualongo</strong>.
-        Soy una estudiante responsable, dedicada y con deseos de aprender
-        nuevas tecnologías. Me gusta adquirir conocimientos que me ayuden
-        en mi formación académica y personal. Entre mis intereses se
-        encuentran la informática, el desarrollo web y el aprendizaje
-        continuo para alcanzar mis metas profesionales.
-    </p>
-</section>
+</div>
 
 <footer>
-    © 2026 - Página Personal de Joselin Paola González Agualongo
+
+Proyecto Final - Joselin Paola González Agualongo © 2026
+
 </footer>
 
 </body>
 </html>
+       
