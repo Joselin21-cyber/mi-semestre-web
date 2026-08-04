@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Personal</title>
 
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, #87CEEB, #E6E6FA);
+        }
+
+        header{
+            background:#4B0082;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        nav{
+            background:#6A5ACD;
+            text-align:center;
+            padding:15px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-weight:bold;
+        }
+
+        section{
+            width:80%;
+            margin:auto;
+            background:white;
+            margin-top:20px;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0px 0px 10px gray;
+        }
+
+        img{
+            display:block;
+            margin:auto;
+            width:220px;
+            height:220px;
+            border-radius:50%;
+            border:5px solid #4B0082;
+        }
+
+        h2{
+            color:#4B0082;
+        }
+
+        .estrellas{
+            color:gold;
+            font-size:28px;
+        }
+
+        footer{
+            background:#4B0082;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Mi Página Personal</h1>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#datos">Datos</a>
+    <a href="#unidades">Unidades</a>
+    <a href="#bibliografia">Bibliografía</a>
+</nav>
+
+<section id="inicio">
+    <h2>Inicio</h2>
+
+    <!-- Cambia "foto.jpg" por el nombre de tu fotografía -->
+    <img src="foto.jpg" alt="Mi Foto">
+
+    <p style="text-align:center;">
+        Bienvenido(a) a mi página web personal.
+    </p>
+</section>
+
+<section id="datos">
+    <h2>Mis Datos</h2>
+
+    <p><strong>Nombre:</strong> Joselin Paola</p>
+    <p><strong>Apellido:</strong> González Agualongo</p>
+</section>
+
+<section id="unidades">
+    <h2>Unidades</h2>
+
+    <h3>Unidad 1</h3>
+    <p class="estrellas">★★★★★</p>
+
+    <h3>Unidad 2</h3>
+    <p class="estrellas">★★★★★</p>
+
+    <h3>Unidad 3</h3>
+    <p class="estrellas">★★★★★</p>
+</section>
+
+<section id="bibliografia">
+    <h2>Mi Biografia</h2>
+
+    <p>
+        Mi nombre es <strong>Joselin Paola González Agualongo</strong>.
+        Soy una estudiante responsable, dedicada y con deseos de aprender
+        nuevas tecnologías. Me gusta adquirir conocimientos que me ayuden
+        en mi formación académica y personal. Entre mis intereses se
+        encuentran la informática, el desarrollo web y el aprendizaje
+        continuo para alcanzar mis metas profesionales.
+    </p>
+</section>
+
+<footer>
+    © 2026 - Página Personal de Joselin Paola González Agualongo
+</footer>
+
+</body>
+</html>
