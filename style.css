@@ -1,204 +1,569 @@
-/* ====== ESTILOS GENERALES ====== */
+/* ===========================
+   GOOGLE FONTS
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* ===========================
+   CONFIGURACIÓN GENERAL
+=========================== */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
 }
 
 body{
-    background:linear-gradient(135deg,#d9f4ff,#8ecae6,#023047);
-    color:#000;
+
+    font-family:'Poppins',sans-serif;
+
+    color:white;
+
+    background-image:
+    linear-gradient(rgba(5,10,20,.82),rgba(5,10,20,.82)),
+    url("https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
 }
 
-/* ====== MENÚ ====== */
+/* ===========================
+   MENÚ
+=========================== */
 
 header{
-    background:#023047;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,.3);
+
+position:fixed;
+
+top:0;
+
+width:100%;
+
+backdrop-filter:blur(12px);
+
+background:rgba(8,18,40,.75);
+
+z-index:1000;
+
+box-shadow:0 0 20px rgba(0,0,0,.5);
+
 }
 
 nav{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px;
+
+width:90%;
+
+margin:auto;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px;
+
 }
 
 .logo{
-    color:white;
+
+font-family:'Cinzel',serif;
+
+font-size:30px;
+
+color:#8fd3ff;
+
 }
 
 nav ul{
-    list-style:none;
-    display:flex;
-    gap:30px;
+
+display:flex;
+
+gap:30px;
+
+list-style:none;
+
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
+
+text-decoration:none;
+
+color:white;
+
+font-size:17px;
+
+transition:.4s;
+
 }
 
 nav a:hover{
-    color:#8ecae6;
+
+color:#7ed6ff;
+
 }
 
-/* ====== INICIO ====== */
+/* ===========================
+   INICIO
+=========================== */
 
 .inicio{
-    max-width:1200px;
-    margin:40px auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:50px;
-    background:white;
-    border-radius:20px;
-    padding:40px;
-    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+width:90%;
+
+margin:140px auto 60px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-around;
+
+gap:60px;
+
+padding:40px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+box-shadow:0 0 35px rgba(0,0,0,.45);
+
 }
 
-.perfil img{
-    width:250px;
-    height:250px;
-    border-radius:50%;
-    border:8px solid #219ebc;
-    object-fit:cover;
+.foto img{
+
+width:280px;
+
+height:280px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:6px solid #5bbcff;
+
+box-shadow:0 0 30px rgba(91,188,255,.6);
+
+transition:.5s;
+
 }
 
-.datos h1{
-    color:#023047;
-    margin-bottom:15px;
+.foto img:hover{
+
+transform:scale(1.05);
+
 }
 
-.datos h3{
-    color:#219ebc;
-    margin-bottom:20px;
+.informacion h1{
+
+font-family:'Cinzel',serif;
+
+font-size:42px;
+
+margin-bottom:20px;
+
+color:white;
+
 }
 
-.datos p{
-    margin:10px 0;
-    font-size:18px;
+.informacion h3{
+
+color:#8fd3ff;
+
+margin-bottom:20px;
+
 }
 
-/* ====== UNIDADES ====== */
+.informacion p{
 
-.unidades{
-    max-width:1200px;
-    margin:40px auto;
-    background:white;
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0 10px 20px rgba(0,0,0,.2);
+margin:12px 0;
+
+font-size:18px;
+
 }
+/*=========================
+      TÍTULOS
+=========================*/
 
-.unidades h1{
+.titulo,
+.bio h2,
+.contacto h2{
+
     text-align:center;
-    color:#023047;
-    margin-bottom:30px;
+    font-family:'Cinzel',serif;
+    font-size:40px;
+    color:#8fd3ff;
+    margin:60px 0 30px;
+
 }
 
-details{
-    margin-bottom:20px;
-    background:#f4fbff;
-    border-radius:12px;
-    padding:15px;
-    border-left:8px solid #219ebc;
+/*=========================
+      UNIDADES
+=========================*/
+
+.unidad{
+
+    width:90%;
+    margin:25px auto;
+
+}
+
+.unidad details{
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+    transition:.4s;
+
+}
+
+.unidad details:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.6);
+
 }
 
 summary{
-    cursor:pointer;
+
     list-style:none;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px;
+
+}
+
+summary::-webkit-details-marker{
+
+    display:none;
+
 }
 
 summary h2{
-    color:#023047;
+
+    font-family:'Cinzel',serif;
+    color:white;
+    margin-bottom:10px;
+
 }
+
+summary p{
+
+    color:#d5e9ff;
+
+}
+
+/*=========================
+      ESTRELLAS
+=========================*/
 
 .estrellas{
-    color:gold;
-    font-size:25px;
-    margin-top:10px;
+
+    color:#FFD700;
+    font-size:28px;
+
 }
 
-details ul{
-    margin-top:20px;
-    margin-left:25px;
-    line-height:2;
+/*=========================
+      TEMAS
+=========================*/
+
+.tema{
+
+    margin:20px;
+    border-radius:15px;
+    background:rgba(0,0,0,.25);
+    overflow:hidden;
+
 }
 
-/* ====== BIOGRAFÍA ====== */
+.tema summary{
 
-.bio{
-    max-width:1200px;
-    margin:40px auto;
-    background:white;
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0 10px 20px rgba(0,0,0,.2);
-}
-
-.bio h1{
-    text-align:center;
-    color:#023047;
-    margin-bottom:20px;
-}
-
-.bio p{
+    padding:18px;
     font-size:18px;
-    text-align:justify;
-    line-height:1.8;
-    margin-bottom:20px;
+    color:#8fd3ff;
+    font-weight:bold;
+    border-left:5px solid #5bbcff;
+    transition:.3s;
+
 }
 
-/* ====== FOOTER ====== */
+.tema summary:hover{
+
+    background:rgba(91,188,255,.15);
+
+}
+
+.contenido{
+
+    padding:25px;
+    line-height:1.9;
+
+}
+
+.contenido h3{
+
+    color:#FFD700;
+    margin-top:15px;
+    margin-bottom:10px;
+
+}
+
+.contenido p,
+.contenido li{
+
+    color:#f2f2f2;
+
+}
+
+.contenido ul{
+
+    margin-left:30px;
+
+}
+
+pre{
+
+    background:#071321;
+    color:#7CFC00;
+    padding:15px;
+    border-radius:10px;
+    overflow:auto;
+    margin-top:15px;
+
+}
+/*=========================
+      BIOGRAFÍA
+=========================*/
+
+.bio,
+.contacto{
+
+    width:90%;
+    margin:50px auto;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+
+}
+
+.bio p,
+.contacto p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin:15px 0;
+
+    color:#f5f5f5;
+
+}
+
+.contacto i{
+
+    color:#8fd3ff;
+
+    margin-right:10px;
+
+}
+
+/*=========================
+      FOOTER
+=========================*/
 
 footer{
-    background:#023047;
-    color:white;
+
+    background:rgba(0,0,0,.75);
+
     text-align:center;
-    padding:20px;
-    margin-top:40px;
+
+    padding:25px;
+
+    margin-top:50px;
+
+    border-top:2px solid #5bbcff;
+
 }
 
-/* ====== EFECTOS ====== */
+footer p{
 
-details:hover{
-    transform:scale(1.02);
-    transition:.3s;
+    color:#d6ecff;
+
+    font-size:16px;
+
 }
 
-.perfil img:hover{
-    transform:scale(1.05);
-    transition:.3s;
+/*=========================
+      BARRA DE SCROLL
+=========================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
 }
 
-/* ====== RESPONSIVE ====== */
+::-webkit-scrollbar-track{
 
-@media(max-width:768px){
+    background:#081220;
 
-.inicio{
-    flex-direction:column;
-    text-align:center;
 }
+
+::-webkit-scrollbar-thumb{
+
+    background:#5bbcff;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#8fd3ff;
+
+}
+
+/*=========================
+      ANIMACIONES
+=========================*/
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.inicio,
+.unidad,
+.bio,
+.contacto{
+
+    animation:aparecer 1s ease;
+
+}
+
+/*=========================
+      RESPONSIVE
+=========================*/
+
+@media(max-width:900px){
 
 nav{
+
     flex-direction:column;
+
     gap:20px;
+
 }
 
 nav ul{
+
     flex-direction:column;
+
     text-align:center;
+
+}
+
+.inicio{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.informacion h1{
+
+    font-size:32px;
+
+}
+
+.foto img{
+
+    width:220px;
+
+    height:220px;
+
+}
+
+summary{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+}
+
+.estrellas{
+
+    font-size:24px;
+
 }
 
 }
+
+@media(max-width:600px){
+
+body{
+
+    font-size:15px;
+
+}
+
+.titulo,
+.bio h2,
+.contacto h2{
+
+    font-size:28px;
+
+}
+
+.informacion h1{
+
+    font-size:26px;
+
+}
+
+.informacion p{
+
+    font-size:16px;
+
+}
+
+}
+
