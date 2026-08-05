@@ -1,182 +1,701 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
+    <title>Portafolio Académico | Joselin Paola González Agualongo</title>
+
+    <!-- Fuente elegante -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
 <body>
 
+<div class="overlay"></div>
+
 <header>
 
-    <nav>
+<nav>
 
-        <h2 class="logo">Mi Portafolio</h2>
+<h2 class="logo">
+<i class="fa-solid fa-laptop-code"></i>
+Portafolio
+</h2>
 
-        <ul>
+<ul>
 
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#unidades">Unidades</a></li>
-            <li><a href="#bio">Biografía</a></li>
+<li><a href="#inicio">Inicio</a></li>
 
-        </ul>
+<li><a href="#unidades">Unidades</a></li>
 
-    </nav>
+<li><a href="#biografia">Biografía</a></li>
+
+<li><a href="#contacto">Contacto</a></li>
+
+</ul>
+
+</nav>
 
 </header>
 
-<section class="inicio" id="inicio">
+<!-- ====================== -->
 
-<div class="perfil">
+<section id="inicio" class="inicio">
 
-    <img src="foto.jpg" alt="Mi Foto">
+<div class="foto">
+
+<img src="foto.jpg" alt="Mi fotografía">
 
 </div>
 
-<div class="datos">
+<div class="informacion">
 
 <h1>Joselin Paola González Agualongo</h1>
 
-<h3>Universidad Técnica de Cotopaxi</h3>
+<h3>Estudiante de Ingeniería en Software</h3>
 
-<p><strong>Carrera:</strong> Ingeniería en Software</p>
+<p>
 
-<p><strong>Nivel:</strong> Nivelación</p>
+<i class="fa-solid fa-building-columns"></i>
 
-<p><strong>Asignatura:</strong> Programación y Algoritmia</p>
+Universidad Técnica de Cotopaxi
 
-<p><strong>Profesor:</strong> Ing. René Quisaguano</p>
+</p>
+
+<p>
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+Facultad de Ciencias de la Ingeniería y Aplicadas
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-book"></i>
+
+Asignatura: Programación y Algoritmia
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-user-tie"></i>
+
+Docente:
+Ing. René Quisaguano
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-layer-group"></i>
+
+Nivelación
+
+</p>
 
 </div>
 
 </section>
 
-<section class="unidades" id="unidades">
+<!-- ====================== -->
 
-<h1>Unidades de Estudio</h1>
+<section id="unidades">
+
+<h1 class="titulo">
+
+Mis Unidades de Aprendizaje
+
+</h1>
+
+<!-- ====================== -->
+
+<div class="unidad">
 
 <details>
 
 <summary>
+
+<div>
 
 <h2>📘 Unidad 1</h2>
 
-<p class="estrellas">
-⭐⭐⭐✨☆
+<p>
+
+Modelo de Von Neumann, Sistemas Operativos,
+Numeración, Álgebra de Boole...
+
 </p>
+
+</div>
+
+<div class="estrellas">
+
+<i class="fas fa-star"></i>
+
+<i class="fas fa-star"></i>
+
+<i class="fas fa-star"></i>
+
+<i class="fas fa-star-half-alt"></i>
+
+<i class="far fa-star"></i>
+
+</div>
 
 </summary>
 
-<ul>
+<!-- ========= Tema 1 ========= -->
 
-<li>Modelo de Von Neumann y Harvard.</li>
+<details class="tema">
 
-<li>Sistemas Operativos.</li>
+<summary>
 
-<li>Sistemas de numeración:
-<ul>
-<li>Binario</li>
-<li>Octal</li>
-<li>Hexadecimal</li>
-</ul>
-</li>
+Modelo de Von Neumann y Harvard
 
-<li>Conversión entre sistemas de numeración.</li>
+</summary>
 
-<li>Aritmética Binaria.</li>
+<div class="contenido">
 
-<li>Álgebra de Boole.</li>
+<h3>Descripción</h3>
 
-</ul>
+<p>
+La arquitectura Von Neumann y Harvard representan dos modelos fundamentales en la organización de los computadores y la forma en que procesan la información.
+</p>
+
+<h3>Desarrollo</h3>
+
+<p>
+Durante esta unidad aprendimos cómo funcionan ambas arquitecturas, sus componentes principales, la manera en que almacenan instrucciones y datos, además de las diferencias entre ellas y sus aplicaciones.
+</p>
+
+<h3>Ejemplo</h3>
+
+<p>
+
+✔ Una computadora personal utiliza la arquitectura Von Neumann, mientras que muchos microcontroladores utilizan la arquitectura Harvard.
+
+</p>
+
+</div>
 
 </details>
+<!-- ========= Tema 2 ========= -->
+
+<details class="tema">
+
+<summary>
+Sistemas Operativos
+</summary>
+
+<div class="contenido">
+
+<h3>Descripción</h3>
+
+<p>
+Un sistema operativo es el software principal que administra los recursos del computador y permite la comunicación entre el usuario y el hardware.
+</p>
+
+<h3>Desarrollo</h3>
+
+<p>
+En esta unidad conocimos las funciones de un sistema operativo, su importancia, los diferentes tipos y cómo administra la memoria, los archivos y los dispositivos.
+</p>
+
+<h3>Ejemplo</h3>
+
+<p>
+✔ Windows, Linux y macOS son ejemplos de sistemas operativos.
+</p>
+
+</div>
+
+</details>
+
+<!-- ========= Tema 3 ========= -->
+
+<details class="tema">
+
+<summary>
+Sistemas de Numeración
+</summary>
+
+<div class="contenido">
+
+<h3>Descripción</h3>
+
+<p>
+Los sistemas de numeración permiten representar información utilizando diferentes bases numéricas.
+</p>
+
+<h3>Desarrollo</h3>
+
+<p>
+Se estudiaron los sistemas binario, octal y hexadecimal, además de realizar conversiones entre ellos para comprender cómo la computadora almacena los datos.
+</p>
+
+<h3>Ejemplo</h3>
+
+<ul>
+<li>Binario → 1010</li>
+<li>Octal → 12</li>
+<li>Hexadecimal → A</li>
+</ul>
+
+</div>
+
+</details>
+
+<!-- ========= Tema 4 ========= -->
+
+<details class="tema">
+
+<summary>
+Aritmética Binaria
+</summary>
+
+<div class="contenido">
+
+<h3>Descripción</h3>
+
+<p>
+Es el conjunto de operaciones matemáticas realizadas utilizando únicamente los números 0 y 1.
+</p>
+
+<h3>Desarrollo</h3>
+
+<p>
+Aprendimos a realizar sumas, restas y operaciones básicas en binario, fundamentales para entender el funcionamiento interno de los computadores.
+</p>
+
+<h3>Ejemplo</h3>
+
+<p>
+✔ 1010 + 0011 = 1101
+</p>
+
+</div>
+
+</details>
+
+<!-- ========= Tema 5 ========= -->
+
+<details class="tema">
+
+<summary>
+Álgebra de Boole
+</summary>
+
+<div class="contenido">
+
+<h3>Descripción</h3>
+
+<p>
+Es un sistema matemático basado en valores lógicos verdadero y falso, utilizado en la electrónica digital.
+</p>
+
+<h3>Desarrollo</h3>
+
+<p>
+Se estudiaron los operadores AND, OR y NOT, comprendiendo cómo funcionan los circuitos lógicos y la toma de decisiones en programación.
+</p>
+
+<h3>Ejemplo</h3>
+
+<ul>
+<li>1 AND 1 = 1</li>
+<li>1 OR 0 = 1</li>
+<li>NOT 1 = 0</li>
+</ul>
+
+</div>
+
+</details>
+
+</details>
+
+</div>
+
+<!-- ====================== -->
+
+<div class="unidad">
 
 <details>
 
 <summary>
+
+<div>
 
 <h2>📗 Unidad 2</h2>
 
-<p class="estrellas">
-⭐⭐⭐⭐✨
+<p>
+Algoritmos, Diagramas de Flujo, Pseudocódigo y Modelado de Problemas.
 </p>
+
+</div>
+
+<div class="estrellas">
+
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+
+</div>
 
 </summary>
 
-<ul>
+<details class="tema">
+<summary>Algoritmos y sus características</summary>
 
-<li>Algoritmos y sus características.</li>
+<div class="contenido">
 
-<li>Diagramas de flujo como herramienta de modelación de algoritmos.</li>
+<h3>Descripción</h3>
 
-<li>Pseudocódigo como herramienta útil.</li>
+<p>
+Un algoritmo es un conjunto ordenado de pasos que permite resolver un problema.
+</p>
 
-<li>Modelado de problemas.</li>
+<h3>Desarrollo</h3>
 
-</ul>
+<p>
+Se analizaron las características principales de un algoritmo como precisión, claridad, orden y finitud.
+</p>
+
+<h3>Ejemplo</h3>
+
+<p>
+✔ Algoritmo para calcular el promedio de tres calificaciones.
+</p>
+
+</div>
 
 </details>
+
+<details class="tema">
+<summary>Diagramas de Flujo</summary>
+
+<div class="contenido">
+
+<h3>Descripción</h3>
+
+<p>
+Representación gráfica de un algoritmo utilizando símbolos.
+</p>
+
+<h3>Desarrollo</h3>
+
+<p>
+Se aprendió a identificar cada símbolo y representar procesos paso a paso.
+</p>
+
+<h3>Ejemplo</h3>
+
+<p>
+✔ Diagrama para determinar si un número es par o impar.
+</p>
+
+</div>
+
+</details>
+
+<details class="tema">
+<summary>Pseudocódigo</summary>
+
+<div class="contenido">
+
+<h3>Descripción</h3>
+
+<p>
+Es una forma sencilla de representar un algoritmo sin depender de un lenguaje de programación.
+</p>
+
+<h3>Desarrollo</h3>
+
+<p>
+Se elaboraron algoritmos utilizando instrucciones fáciles de comprender.
+</p>
+
+<h3>Ejemplo</h3>
+
+<pre>
+Inicio
+Leer número
+Mostrar número
+Fin
+</pre>
+
+</div>
+
+</details>
+
+<details class="tema">
+<summary>Modelado de Problemas</summary>
+
+<div class="contenido">
+
+<h3>Descripción</h3>
+
+<p>
+Proceso mediante el cual se analiza un problema antes de desarrollar la solución.
+</p>
+
+<h3>Desarrollo</h3>
+
+<p>
+Se identificaron entradas, procesos y salidas para resolver distintos casos prácticos.
+</p>
+
+<h3>Ejemplo</h3>
+
+<p>
+✔ Sistema para calcular el sueldo de un trabajador.
+</p>
+
+</div>
+
+</details>
+
+</details>
+
+</div>
+<!-- ====================== -->
+
+<div class="unidad">
 
 <details>
 
 <summary>
 
+<div>
+
 <h2>📕 Unidad 3</h2>
 
-<p class="estrellas">
-⭐⭐☆☆☆
+<p>
+Lenguajes de programación, Python, operadores y estructuras de control.
 </p>
+
+</div>
+
+<div class="estrellas">
+
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+
+</div>
 
 </summary>
 
-<ul>
+<details class="tema">
 
-<li>Lenguajes y paradigmas de programación.</li>
+<summary>Lenguajes y Paradigmas de Programación</summary>
 
-<li>Introducción a la programación en Python.</li>
+<div class="contenido">
 
-<li>Operadores algebraicos, relacionales y lógicos.</li>
+<h3>Descripción</h3>
 
-<li>Estructuras de control condicionales.</li>
+<p>
+Los lenguajes de programación permiten desarrollar programas y aplicaciones para resolver distintos problemas.
+</p>
 
-<li>Estructuras de control repetitivas.</li>
+<h3>Desarrollo</h3>
 
-</ul>
+<p>
+Se estudiaron los principales paradigmas de programación como el estructurado, orientado a objetos y funcional.
+</p>
+
+<h3>Ejemplo</h3>
+
+<p>
+✔ Python, Java, C++ y JavaScript.
+</p>
+
+</div>
 
 </details>
 
+<details class="tema">
+
+<summary>Introducción a Python</summary>
+
+<div class="contenido">
+
+<h3>Descripción</h3>
+
+<p>
+Python es un lenguaje de programación sencillo, potente y ampliamente utilizado.
+</p>
+
+<h3>Desarrollo</h3>
+
+<p>
+Se aprendió la sintaxis básica, variables, impresión de datos y operaciones simples.
+</p>
+
+<h3>Ejemplo</h3>
+
+<pre>
+print("Hola Mundo")
+</pre>
+
+</div>
+
+</details>
+
+<details class="tema">
+
+<summary>Operadores Algebraicos, Relacionales y Lógicos</summary>
+
+<div class="contenido">
+
+<h3>Descripción</h3>
+
+<p>
+Permiten realizar cálculos matemáticos, comparaciones y operaciones lógicas dentro de un programa.
+</p>
+
+<h3>Desarrollo</h3>
+
+<p>
+Se practicó el uso de operadores aritméticos, relacionales y lógicos para resolver diferentes ejercicios.
+</p>
+
+<h3>Ejemplo</h3>
+
+<pre>
+a = 10
+b = 5
+
+print(a + b)
+print(a > b)
+</pre>
+
+</div>
+
+</details>
+
+<details class="tema">
+
+<summary>Estructuras de Control Condicionales</summary>
+
+<div class="contenido">
+
+<h3>Descripción</h3>
+
+<p>
+Permiten tomar decisiones dependiendo de una condición.
+</p>
+
+<h3>Desarrollo</h3>
+
+<p>
+Se trabajó con las instrucciones <strong>if</strong>, <strong>elif</strong> y <strong>else</strong>.
+</p>
+
+<h3>Ejemplo</h3>
+
+<pre>
+if nota >= 7:
+    print("Aprobado")
+else:
+    print("Reprobado")
+</pre>
+
+</div>
+
+</details>
+
+<details class="tema">
+
+<summary>Estructuras de Control Repetitivas</summary>
+
+<div class="contenido">
+
+<h3>Descripción</h3>
+
+<p>
+Permiten ejecutar un conjunto de instrucciones varias veces.
+</p>
+
+<h3>Desarrollo</h3>
+
+<p>
+Se estudiaron los ciclos <strong>for</strong> y <strong>while</strong>.
+</p>
+
+<h3>Ejemplo</h3>
+
+<pre>
+for i in range(5):
+    print(i)
+</pre>
+
+</div>
+
+</details>
+
+</details>
+
+</div>
+
 </section>
 
-<section id="bio" class="bio">
+<!-- ====================== -->
 
-<h1>Mi Biografía</h1>
+<section id="biografia" class="bio">
+
+<h2>Mi Biografía</h2>
 
 <p>
-¡Hola! Soy <strong>Joselin Paola González Agualongo</strong>, estudiante de Ingeniería en Software. Me considero una persona responsable, curiosa y con muchas ganas de aprender. Me gusta descubrir nuevas herramientas tecnológicas, desarrollar mis habilidades en programación y asumir nuevos retos que me ayuden a crecer tanto en lo académico como en lo personal.
+¡Hola! Soy <strong>Joselin Paola González Agualongo</strong>, estudiante de Ingeniería en Software en la Universidad Técnica de Cotopaxi. Me considero una persona responsable, perseverante y con muchas ganas de seguir aprendiendo. Me apasiona la tecnología y disfruto descubrir nuevas herramientas que me ayuden a crecer tanto académica como profesionalmente.
 </p>
 
 <p>
-En mi tiempo libre disfruto escuchar música, compartir con mi familia y amigos, y seguir aprendiendo sobre tecnología. Mi objetivo es convertirme en una excelente profesional y participar en proyectos que aporten soluciones innovadoras.
+Durante este curso he fortalecido mis conocimientos en algoritmos, programación y arquitectura de computadores. Mi meta es seguir desarrollando habilidades que me permitan crear proyectos útiles e innovadores para el futuro.
 </p>
+
+</section>
+
+<!-- ====================== -->
+
+<section id="contacto" class="contacto">
+
+<h2>Contacto</h2>
+
+<p><i class="fas fa-user"></i> Joselin Paola González Agualongo</p>
+
+<p><i class="fas fa-university"></i> Universidad Técnica de Cotopaxi</p>
+
+<p><i class="fas fa-laptop-code"></i> Ingeniería en Software</p>
 
 </section>
 
 <footer>
 
-<p>© 2026 - Página Personal | Joselin Paola González Agualongo</p>
+<p>
+© 2026 | Portafolio Académico | Joselin Paola González Agualongo
+</p>
 
 </footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
-</html>
-       
