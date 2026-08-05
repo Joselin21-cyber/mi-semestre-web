@@ -7,125 +7,176 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
 <body>
 
 <header>
+
     <nav>
-        <h2>Mi Página Web</h2>
+
+        <h2 class="logo">Mi Portafolio</h2>
 
         <ul>
+
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#unidades">Unidades</a></li>
-            <li><a href="#bibliografia">Bibliografía</a></li>
+            <li><a href="#bio">Biografía</a></li>
+
         </ul>
+
     </nav>
-
-    <section id="inicio" class="hero">
-
-        <img src="foto.jpg" alt="Mi Foto">
-
-        <h1>JOSELIN PAOLA GONZALEZ AGUALONGO</h1>
-
-        <p>
-            Estudiante de Programación apasionada por aprender nuevas tecnologías,
-            desarrollar soluciones y fortalecer mis conocimientos en informática.
-        </p>
-
-        <a href="#unidades" class="boton">
-            Ver Unidades
-        </a>
-
-    </section>
 
 </header>
 
-<section id="unidades">
+<section class="inicio" id="inicio">
 
-<h2 class="titulo">Unidades de Aprendizaje</h2>
+<div class="perfil">
 
-<div class="contenedor">
-
-<div class="card">
-<h3>Unidad 1</h3>
-
-<p class="estrellas">⭐⭐⭐✨</p>
-
-<ul>
-<li>Modelo de Von Neumann y Harvard.</li>
-<li>Sistemas Operativos.</li>
-<li>Binario, Octal y Hexadecimal.</li>
-<li>Aritmética Binaria.</li>
-<li>Álgebra de Boole.</li>
-</ul>
+    <img src="foto.jpg" alt="Mi Foto">
 
 </div>
 
-<div class="card">
+<div class="datos">
 
-<h3>Unidad 2</h3>
+<h1>Joselin Paola González Agualongo</h1>
 
-<p class="estrellas">⭐⭐⭐⭐✨</p>
+<h3>Universidad Técnica de Cotopaxi</h3>
 
-<ul>
-<li>Algoritmos.</li>
-<li>Diagramas de Flujo.</li>
-<li>Pseudocódigo.</li>
-<li>Modelado de Problemas.</li>
-</ul>
+<p><strong>Carrera:</strong> Ingeniería en Software</p>
 
-</div>
+<p><strong>Nivel:</strong> Nivelación</p>
 
-<div class="card">
+<p><strong>Asignatura:</strong> Programación y Algoritmia</p>
 
-<h3>Unidad 3</h3>
-
-<p class="estrellas">⭐⭐</p>
-
-<ul>
-<li>Lenguajes de Programación.</li>
-<li>Introducción a Python.</li>
-<li>Operadores.</li>
-<li>Condicionales.</li>
-<li>Repetitivas.</li>
-</ul>
-
-</div>
+<p><strong>Profesor:</strong> Ing. René Quisaguano</p>
 
 </div>
 
 </section>
 
-<section id="bibliografia">
+<section class="unidades" id="unidades">
 
-<h2 class="titulo">Bibliografía</h2>
+<h1>Unidades de Estudio</h1>
 
-<div class="biblio">
+<details>
 
-<p>
-Durante este curso consulté el material proporcionado por el docente,
-la documentación oficial de Python y diferentes recursos educativos
-para fortalecer mis conocimientos en programación.
+<summary>
+
+<h2>📘 Unidad 1</h2>
+
+<p class="estrellas">
+⭐⭐⭐✨☆
 </p>
 
-</div>
+</summary>
+
+<ul>
+
+<li>Modelo de Von Neumann y Harvard.</li>
+
+<li>Sistemas Operativos.</li>
+
+<li>Sistemas de numeración:
+<ul>
+<li>Binario</li>
+<li>Octal</li>
+<li>Hexadecimal</li>
+</ul>
+</li>
+
+<li>Conversión entre sistemas de numeración.</li>
+
+<li>Aritmética Binaria.</li>
+
+<li>Álgebra de Boole.</li>
+
+</ul>
+
+</details>
+
+<details>
+
+<summary>
+
+<h2>📗 Unidad 2</h2>
+
+<p class="estrellas">
+⭐⭐⭐⭐✨
+</p>
+
+</summary>
+
+<ul>
+
+<li>Algoritmos y sus características.</li>
+
+<li>Diagramas de flujo como herramienta de modelación de algoritmos.</li>
+
+<li>Pseudocódigo como herramienta útil.</li>
+
+<li>Modelado de problemas.</li>
+
+</ul>
+
+</details>
+
+<details>
+
+<summary>
+
+<h2>📕 Unidad 3</h2>
+
+<p class="estrellas">
+⭐⭐☆☆☆
+</p>
+
+</summary>
+
+<ul>
+
+<li>Lenguajes y paradigmas de programación.</li>
+
+<li>Introducción a la programación en Python.</li>
+
+<li>Operadores algebraicos, relacionales y lógicos.</li>
+
+<li>Estructuras de control condicionales.</li>
+
+<li>Estructuras de control repetitivas.</li>
+
+</ul>
+
+</details>
+
+</section>
+
+<section id="bio" class="bio">
+
+<h1>Mi Biografía</h1>
+
+<p>
+¡Hola! Soy <strong>Joselin Paola González Agualongo</strong>, estudiante de Ingeniería en Software. Me considero una persona responsable, curiosa y con muchas ganas de aprender. Me gusta descubrir nuevas herramientas tecnológicas, desarrollar mis habilidades en programación y asumir nuevos retos que me ayuden a crecer tanto en lo académico como en lo personal.
+</p>
+
+<p>
+En mi tiempo libre disfruto escuchar música, compartir con mi familia y amigos, y seguir aprendiendo sobre tecnología. Mi objetivo es convertirme en una excelente profesional y participar en proyectos que aporten soluciones innovadoras.
+</p>
 
 </section>
 
 <footer>
 
-<p>
-© 2026 - Página Web Personal | Programación
-</p>
+<p>© 2026 - Página Personal | Joselin Paola González Agualongo</p>
 
 </footer>
 
 <script src="script.js"></script>
 
 </body>
+</html>
 </html>
        
