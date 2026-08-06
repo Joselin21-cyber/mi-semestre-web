@@ -1,12 +1,12 @@
-/*====================================
-      GOOGLE FONTS
-====================================*/
+/* ==========================
+   FUENTES
+========================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap');
 
-/*====================================
-      CONFIGURACIÓN GENERAL
-====================================*/
+/* ==========================
+   GENERAL
+========================== */
 
 *{
     margin:0;
@@ -16,634 +16,362 @@
 }
 
 body{
-
     font-family:'Poppins',sans-serif;
-
     background:
-    linear-gradient(rgba(5,10,20,.85),rgba(5,10,20,.85)),
+    linear-gradient(rgba(5,8,20,.88),rgba(5,8,20,.90)),
     url("fondo.jpg");
-
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
-
-    color:white;
-
+    color:#fff;
 }
 
-/*====================================
-            MENÚ
-====================================*/
+/* ==========================
+   NAVBAR
+========================== */
 
 header{
-
     width:100%;
     position:fixed;
     top:0;
-    left:0;
-
-    background:rgba(5,15,35,.75);
-
-    backdrop-filter:blur(12px);
-
-    z-index:999;
-
-    box-shadow:0 0 20px rgba(0,0,0,.4);
-
+    z-index:1000;
+    backdrop-filter:blur(15px);
+    background:rgba(0,0,0,.35);
+    border-bottom:1px solid rgba(0,255,255,.2);
 }
 
 nav{
-
     width:90%;
     margin:auto;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
-    padding:20px;
-
+    padding:18px 0;
 }
 
 .logo{
-
-    font-family:'Cinzel',serif;
-
-    color:#7fd4ff;
-
-    font-size:32px;
-
+    font-family:'Orbitron',sans-serif;
+    font-size:26px;
+    color:#00e5ff;
+    text-shadow:0 0 12px #00e5ff;
 }
 
 nav ul{
-
-    list-style:none;
-
     display:flex;
-
-    gap:30px;
-
+    list-style:none;
+    gap:35px;
 }
 
-nav a{
-
-    text-decoration:none;
-
+nav ul li a{
     color:white;
-
-    font-size:17px;
-
+    text-decoration:none;
     transition:.4s;
-
+    font-weight:500;
 }
 
-nav a:hover{
-
-    color:#7fd4ff;
-
+nav ul li a:hover{
+    color:#00e5ff;
+    text-shadow:0 0 10px #00e5ff;
 }
 
-/*====================================
-             INICIO
-====================================*/
+/* ==========================
+   HERO
+========================== */
 
 .hero{
-
-    width:90%;
-
-    margin:150px auto 80px;
-
-    padding:50px;
-
-    background:rgba(255,255,255,.08);
-
-    backdrop-filter:blur(15px);
-
-    border-radius:25px;
-
+    min-height:100vh;
     display:flex;
-
-    justify-content:center;
-
+    justify-content:space-around;
     align-items:center;
-
-    text-align:center;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.45);
-
+    padding:120px 8%;
 }
 
-.perfil img{
+.hero-texto{
+    width:50%;
+}
 
-    width:260px;
+.hero-texto h3{
+    color:#00e5ff;
+    font-family:'Orbitron';
+    letter-spacing:4px;
+    margin-bottom:15px;
+}
 
-    height:260px;
+.hero-texto h1{
+    font-family:'Orbitron';
+    font-size:58px;
+    margin-bottom:25px;
+    line-height:1.2;
+}
 
+.hero-texto p{
+    font-size:19px;
+    color:#d6d6d6;
+    margin-bottom:35px;
+}
+
+.btn-principal{
+    display:inline-block;
+    padding:16px 40px;
+    background:#00cfff;
+    color:white;
+    border-radius:40px;
+    text-decoration:none;
+    transition:.4s;
+    box-shadow:0 0 20px #00cfff;
+}
+
+.btn-principal:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 40px #00cfff;
+}
+
+/* FOTO */
+
+.circulo{
+    width:340px;
+    height:340px;
     border-radius:50%;
+    overflow:hidden;
+    border:6px solid #00e5ff;
+    box-shadow:0 0 35px #00e5ff;
+}
 
-    border:6px solid #5bbcff;
-
+.circulo img{
+    width:100%;
+    height:100%;
     object-fit:cover;
-
-    box-shadow:0 0 30px rgba(91,188,255,.7);
-
-    transition:.5s;
-
 }
-
-.perfil img:hover{
-
-    transform:scale(1.05);
-
-}
-
-.perfil h1{
-
-    margin-top:25px;
-
-    font-family:'Cinzel',serif;
-
-    font-size:42px;
-
-}
-
-.perfil h3{
-
-    margin:15px 0;
-
-    color:#7fd4ff;
-
-}
-
-.perfil p{
-
-    margin:8px 0;
-
-    font-size:18px;
-
-}
-
-/*====================================
-           TÍTULOS
-====================================*/
+/* ==========================
+   TÍTULOS
+========================== */
 
 .titulo{
-
     text-align:center;
-
-    font-family:'Cinzel',serif;
-
-    font-size:40px;
-
-    margin-bottom:50px;
-
-    color:#7fd4ff;
-
+    font-family:'Orbitron',sans-serif;
+    font-size:42px;
+    color:#00e5ff;
+    margin:80px 0 50px;
+    text-shadow:0 0 20px #00e5ff;
 }
-/*====================================
-        TARJETAS DE UNIDADES
-====================================*/
 
-#unidades{
-
-    width:90%;
-    margin:80px auto;
-
-}
+/* ==========================
+   TARJETAS
+========================== */
 
 .contenedor{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
     gap:35px;
-
+    padding-bottom:80px;
 }
 
 .card{
-
-    background:rgba(255,255,255,.08);
-
-    backdrop-filter:blur(15px);
-
-    border-radius:20px;
-
+    width:330px;
     padding:30px;
-
     text-align:center;
-
+    border-radius:25px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(0,255,255,.3);
     transition:.4s;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.45);
-
+    box-shadow:0 0 20px rgba(0,255,255,.15);
 }
 
 .card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 0 35px #00e5ff;
+}
 
-    transform:translateY(-10px);
-
-    box-shadow:0 20px 35px rgba(0,0,0,.6);
-
+.icono{
+    font-size:55px;
+    color:#00e5ff;
+    margin-bottom:20px;
 }
 
 .card h2{
-
-    font-family:'Cinzel',serif;
-
+    font-family:'Orbitron',sans-serif;
     margin-bottom:15px;
-
-    color:#ffffff;
-
 }
 
 .card p{
-
-    margin:15px 0;
-
-    line-height:1.7;
-
+    color:#d8d8d8;
+    line-height:1.6;
 }
 
-.stars{
-
-    font-size:28px;
-
-    color:#FFD700;
-
-    letter-spacing:4px;
-
-    margin-top:20px;
-
+.estrellas{
+    margin:20px 0;
+    font-size:25px;
 }
 
 .nota{
-
-    color:#7fd4ff;
-
-    font-size:20px;
-
+    color:#00e5ff;
     font-weight:bold;
-
-    margin:15px 0;
-
 }
 
-/*====================================
-            BOTONES
-====================================*/
-
 .boton{
-
     display:inline-block;
-
     margin-top:20px;
-
     padding:12px 28px;
-
-    background:linear-gradient(45deg,#1565C0,#42A5F5);
-
-    color:white;
-
     text-decoration:none;
-
-    border-radius:50px;
-
-    transition:.4s;
-
-    font-weight:bold;
-
+    color:white;
+    background:#00cfff;
+    border-radius:30px;
+    transition:.3s;
+    box-shadow:0 0 20px #00cfff;
 }
 
 .boton:hover{
-
-    background:linear-gradient(45deg,#42A5F5,#1565C0);
-
     transform:scale(1.05);
-
-    box-shadow:0 0 20px rgba(66,165,245,.6);
-
+    box-shadow:0 0 35px #00cfff;
 }
 
-/*====================================
-            DETAILS
-====================================*/
+/* ==========================
+   BIOGRAFÍA
+========================== */
 
-details{
-
-    width:90%;
-
-    margin:25px auto;
-
-    background:rgba(255,255,255,.08);
-
-    border-radius:15px;
-
-    overflow:hidden;
-
-    backdrop-filter:blur(10px);
-
-    box-shadow:0 10px 20px rgba(0,0,0,.45);
-
-}
-
-summary{
-
-    cursor:pointer;
-
-    padding:20px;
-
-    font-size:20px;
-
-    font-weight:bold;
-
-    color:#7fd4ff;
-
-    list-style:none;
-
-}
-
-summary::-webkit-details-marker{
-
-    display:none;
-
-}
-
-details p{
-
-    padding:0 25px 15px;
-
-    line-height:1.8;
-
-}
-
-details h3{
-
-    padding:20px 25px 10px;
-
-    color:#FFD700;
-
-}
-
-pre{
-
-    margin:20px;
-
-    background:#061320;
-
-    color:#7CFC00;
-
-    padding:15px;
-
-    border-radius:10px;
-
-    overflow:auto;
-
-}
-
-table{
-
-    width:90%;
-
-    margin:20px auto;
-
-    border-collapse:collapse;
-
-}
-
-table th,
-table td{
-
-    border:1px solid rgba(255,255,255,.2);
-
-    padding:12px;
-
-    text-align:center;
-
-}
-
-table th{
-
-    background:#1565C0;
-
-}
-/*====================================
-        BIOGRAFÍA Y CONTACTO
-====================================*/
-
-#biografia,
-#contacto{
-
-    width:90%;
-
-    margin:80px auto;
-
-    padding:40px;
-
-    background:rgba(255,255,255,.08);
-
-    backdrop-filter:blur(15px);
-
+.bio-card,
+.contacto-card{
+    width:80%;
+    margin:40px auto;
+    padding:35px;
     border-radius:20px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.45);
-
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.15);
+    line-height:1.8;
 }
 
-.bio{
+/* ==========================
+   HABILIDADES
+========================== */
 
-    line-height:2;
-
-    font-size:18px;
-
-    text-align:justify;
-
+.skills{
+    width:80%;
+    margin:auto;
 }
 
-#contacto p{
-
-    margin:15px 0;
-
-    font-size:18px;
-
+.skill{
+    margin:25px 0;
 }
 
-#contacto i{
-
-    color:#7fd4ff;
-
-    margin-right:10px;
-
+.barra{
+    width:100%;
+    height:18px;
+    background:#222;
+    border-radius:20px;
+    overflow:hidden;
 }
 
-/*====================================
-              FOOTER
-====================================*/
+.progreso{
+    height:100%;
+    text-align:right;
+    padding-right:10px;
+    color:white;
+    font-size:12px;
+    line-height:18px;
+    font-weight:bold;
+}
+
+.html{width:90%;background:#00cfff;}
+.css{width:85%;background:#8a2be2;}
+.python{width:70%;background:#00b894;}
+.algoritmos{width:88%;background:#ff9800;}
+
+/* ==========================
+   TECNOLOGÍAS
+========================== */
+
+.iconos-tech{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:60px 0;
+}
+
+.tech{
+    width:180px;
+    padding:30px;
+    text-align:center;
+    border-radius:20px;
+    background:rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.tech:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px #00e5ff;
+}
+
+.tech i{
+    font-size:55px;
+    color:#00e5ff;
+    margin-bottom:15px;
+}
+
+/* ==========================
+   FOOTER
+========================== */
 
 footer{
-
-    margin-top:60px;
-
+    margin-top:80px;
+    padding:35px;
     text-align:center;
-
-    padding:30px;
-
-    background:rgba(0,0,0,.75);
-
-    border-top:2px solid #42A5F5;
-
+    background:#050814;
+    border-top:1px solid rgba(0,255,255,.2);
 }
 
-footer p{
-
-    color:#ddd;
-
-    font-size:16px;
-
-}
-
-/*====================================
-            ANIMACIONES
-====================================*/
-
-@keyframes aparecer{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(40px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-}
-
-.hero,
-.card,
-details,
-#biografia,
-#contacto{
-
-    animation:aparecer .9s ease;
-
-}
-
-/*====================================
-        SCROLL PERSONALIZADO
-====================================*/
-
-::-webkit-scrollbar{
-
-    width:10px;
-
-}
-
-::-webkit-scrollbar-track{
-
-    background:#061320;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-    background:#42A5F5;
-
-    border-radius:20px;
-
-}
-
-::-webkit-scrollbar-thumb:hover{
-
-    background:#64B5F6;
-
-}
-
-/*====================================
-          RESPONSIVE
-====================================*/
+/* ==========================
+   RESPONSIVE
+========================== */
 
 @media(max-width:900px){
 
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-texto{
+    width:100%;
+}
+
+.hero-texto h1{
+    font-size:38px;
+}
+
+.circulo{
+    width:250px;
+    height:250px;
+    margin-bottom:40px;
+}
+
 nav{
-
     flex-direction:column;
-
-    gap:20px;
-
+    gap:15px;
 }
 
 nav ul{
-
-    flex-direction:column;
-
-    text-align:center;
-
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
-.hero{
-
-    padding:30px;
-
+.card{
+    width:95%;
 }
 
-.perfil img{
-
-    width:200px;
-
-    height:200px;
-
-}
-
-.perfil h1{
-
-    font-size:30px;
-
-}
-
-.titulo{
-
-    font-size:30px;
-
-}
-
-.contenedor{
-
-    grid-template-columns:1fr;
-
+.bio-card,
+.contacto-card,
+.skills{
+    width:95%;
 }
 
 }
 
-@media(max-width:600px){
 
-body{
-
-    font-size:15px;
-
-}
-
-summary{
-
-    font-size:17px;
-
-}
-
-.boton{
-
-    width:100%;
-
-    text-align:center;
-
-}
-
-}
