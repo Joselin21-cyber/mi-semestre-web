@@ -1,12 +1,12 @@
-/* ===========================
-   GOOGLE FONTS
-=========================== */
+/*====================================
+      GOOGLE FONTS
+====================================*/
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap');
 
-/* ===========================
-   CONFIGURACIÓN GENERAL
-=========================== */
+/*====================================
+      CONFIGURACIÓN GENERAL
+====================================*/
 
 *{
     margin:0;
@@ -19,230 +19,349 @@ body{
 
     font-family:'Poppins',sans-serif;
 
-    color:white;
-
-    background-image:
-    linear-gradient(rgba(5,10,20,.82),rgba(5,10,20,.82)),
-    url("https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=80");
+    background:
+    linear-gradient(rgba(5,10,20,.85),rgba(5,10,20,.85)),
+    url("fondo.jpg");
 
     background-size:cover;
-
     background-position:center;
-
     background-attachment:fixed;
+
+    color:white;
 
 }
 
-/* ===========================
-   MENÚ
-=========================== */
+/*====================================
+            MENÚ
+====================================*/
 
 header{
 
-position:fixed;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
 
-top:0;
+    background:rgba(5,15,35,.75);
 
-width:100%;
+    backdrop-filter:blur(12px);
 
-backdrop-filter:blur(12px);
+    z-index:999;
 
-background:rgba(8,18,40,.75);
-
-z-index:1000;
-
-box-shadow:0 0 20px rgba(0,0,0,.5);
+    box-shadow:0 0 20px rgba(0,0,0,.4);
 
 }
 
 nav{
 
-width:90%;
+    width:90%;
+    margin:auto;
 
-margin:auto;
+    display:flex;
 
-display:flex;
+    justify-content:space-between;
 
-justify-content:space-between;
+    align-items:center;
 
-align-items:center;
-
-padding:20px;
+    padding:20px;
 
 }
 
 .logo{
 
-font-family:'Cinzel',serif;
+    font-family:'Cinzel',serif;
 
-font-size:30px;
+    color:#7fd4ff;
 
-color:#8fd3ff;
+    font-size:32px;
 
 }
 
 nav ul{
 
-display:flex;
+    list-style:none;
 
-gap:30px;
+    display:flex;
 
-list-style:none;
+    gap:30px;
 
 }
 
 nav a{
 
-text-decoration:none;
+    text-decoration:none;
 
-color:white;
+    color:white;
 
-font-size:17px;
+    font-size:17px;
 
-transition:.4s;
+    transition:.4s;
 
 }
 
 nav a:hover{
 
-color:#7ed6ff;
+    color:#7fd4ff;
 
 }
 
-/* ===========================
-   INICIO
-=========================== */
+/*====================================
+             INICIO
+====================================*/
 
-.inicio{
-
-width:90%;
-
-margin:140px auto 60px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-around;
-
-gap:60px;
-
-padding:40px;
-
-border-radius:25px;
-
-background:rgba(255,255,255,.08);
-
-backdrop-filter:blur(15px);
-
-box-shadow:0 0 35px rgba(0,0,0,.45);
-
-}
-
-.foto img{
-
-width:280px;
-
-height:280px;
-
-border-radius:50%;
-
-object-fit:cover;
-
-border:6px solid #5bbcff;
-
-box-shadow:0 0 30px rgba(91,188,255,.6);
-
-transition:.5s;
-
-}
-
-.foto img:hover{
-
-transform:scale(1.05);
-
-}
-
-.informacion h1{
-
-font-family:'Cinzel',serif;
-
-font-size:42px;
-
-margin-bottom:20px;
-
-color:white;
-
-}
-
-.informacion h3{
-
-color:#8fd3ff;
-
-margin-bottom:20px;
-
-}
-
-.informacion p{
-
-margin:12px 0;
-
-font-size:18px;
-
-}
-/*=========================
-      TÍTULOS
-=========================*/
-
-.titulo,
-.bio h2,
-.contacto h2{
-
-    text-align:center;
-    font-family:'Cinzel',serif;
-    font-size:40px;
-    color:#8fd3ff;
-    margin:60px 0 30px;
-
-}
-
-/*=========================
-      UNIDADES
-=========================*/
-
-.unidad{
+.hero{
 
     width:90%;
-    margin:25px auto;
 
-}
+    margin:150px auto 80px;
 
-.unidad details{
+    padding:50px;
 
     background:rgba(255,255,255,.08);
+
     backdrop-filter:blur(15px);
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,.4);
-    transition:.4s;
+
+    border-radius:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.45);
 
 }
 
-.unidad details:hover{
+.perfil img{
 
-    transform:translateY(-5px);
-    box-shadow:0 15px 35px rgba(0,0,0,.6);
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    border:6px solid #5bbcff;
+
+    object-fit:cover;
+
+    box-shadow:0 0 30px rgba(91,188,255,.7);
+
+    transition:.5s;
+
+}
+
+.perfil img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.perfil h1{
+
+    margin-top:25px;
+
+    font-family:'Cinzel',serif;
+
+    font-size:42px;
+
+}
+
+.perfil h3{
+
+    margin:15px 0;
+
+    color:#7fd4ff;
+
+}
+
+.perfil p{
+
+    margin:8px 0;
+
+    font-size:18px;
+
+}
+
+/*====================================
+           TÍTULOS
+====================================*/
+
+.titulo{
+
+    text-align:center;
+
+    font-family:'Cinzel',serif;
+
+    font-size:40px;
+
+    margin-bottom:50px;
+
+    color:#7fd4ff;
+
+}
+/*====================================
+        TARJETAS DE UNIDADES
+====================================*/
+
+#unidades{
+
+    width:90%;
+    margin:80px auto;
+
+}
+
+.contenedor{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:35px;
+
+}
+
+.card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.45);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 35px rgba(0,0,0,.6);
+
+}
+
+.card h2{
+
+    font-family:'Cinzel',serif;
+
+    margin-bottom:15px;
+
+    color:#ffffff;
+
+}
+
+.card p{
+
+    margin:15px 0;
+
+    line-height:1.7;
+
+}
+
+.stars{
+
+    font-size:28px;
+
+    color:#FFD700;
+
+    letter-spacing:4px;
+
+    margin-top:20px;
+
+}
+
+.nota{
+
+    color:#7fd4ff;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    margin:15px 0;
+
+}
+
+/*====================================
+            BOTONES
+====================================*/
+
+.boton{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 28px;
+
+    background:linear-gradient(45deg,#1565C0,#42A5F5);
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    transition:.4s;
+
+    font-weight:bold;
+
+}
+
+.boton:hover{
+
+    background:linear-gradient(45deg,#42A5F5,#1565C0);
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 20px rgba(66,165,245,.6);
+
+}
+
+/*====================================
+            DETAILS
+====================================*/
+
+details{
+
+    width:90%;
+
+    margin:25px auto;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.45);
 
 }
 
 summary{
 
-    list-style:none;
     cursor:pointer;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px;
+
+    padding:20px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#7fd4ff;
+
+    list-style:none;
 
 }
 
@@ -252,108 +371,76 @@ summary::-webkit-details-marker{
 
 }
 
-summary h2{
+details p{
 
-    font-family:'Cinzel',serif;
-    color:white;
-    margin-bottom:10px;
+    padding:0 25px 15px;
 
-}
-
-summary p{
-
-    color:#d5e9ff;
+    line-height:1.8;
 
 }
 
-/*=========================
-      ESTRELLAS
-=========================*/
+details h3{
 
-.estrellas{
+    padding:20px 25px 10px;
 
     color:#FFD700;
-    font-size:28px;
-
-}
-
-/*=========================
-      TEMAS
-=========================*/
-
-.tema{
-
-    margin:20px;
-    border-radius:15px;
-    background:rgba(0,0,0,.25);
-    overflow:hidden;
-
-}
-
-.tema summary{
-
-    padding:18px;
-    font-size:18px;
-    color:#8fd3ff;
-    font-weight:bold;
-    border-left:5px solid #5bbcff;
-    transition:.3s;
-
-}
-
-.tema summary:hover{
-
-    background:rgba(91,188,255,.15);
-
-}
-
-.contenido{
-
-    padding:25px;
-    line-height:1.9;
-
-}
-
-.contenido h3{
-
-    color:#FFD700;
-    margin-top:15px;
-    margin-bottom:10px;
-
-}
-
-.contenido p,
-.contenido li{
-
-    color:#f2f2f2;
-
-}
-
-.contenido ul{
-
-    margin-left:30px;
 
 }
 
 pre{
 
-    background:#071321;
+    margin:20px;
+
+    background:#061320;
+
     color:#7CFC00;
+
     padding:15px;
+
     border-radius:10px;
+
     overflow:auto;
-    margin-top:15px;
 
 }
-/*=========================
-      BIOGRAFÍA
-=========================*/
 
-.bio,
-.contacto{
+table{
 
     width:90%;
-    margin:50px auto;
+
+    margin:20px auto;
+
+    border-collapse:collapse;
+
+}
+
+table th,
+table td{
+
+    border:1px solid rgba(255,255,255,.2);
+
+    padding:12px;
+
+    text-align:center;
+
+}
+
+table th{
+
+    background:#1565C0;
+
+}
+/*====================================
+        BIOGRAFÍA Y CONTACTO
+====================================*/
+
+#biografia,
+#contacto{
+
+    width:90%;
+
+    margin:80px auto;
+
+    padding:40px;
 
     background:rgba(255,255,255,.08);
 
@@ -361,62 +448,99 @@ pre{
 
     border-radius:20px;
 
-    padding:40px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.45);
+    box-shadow:0 10px 25px rgba(0,0,0,.45);
 
 }
 
-.bio p,
-.contacto p{
+.bio{
+
+    line-height:2;
 
     font-size:18px;
 
-    line-height:1.9;
-
-    margin:15px 0;
-
-    color:#f5f5f5;
+    text-align:justify;
 
 }
 
-.contacto i{
+#contacto p{
 
-    color:#8fd3ff;
+    margin:15px 0;
+
+    font-size:18px;
+
+}
+
+#contacto i{
+
+    color:#7fd4ff;
 
     margin-right:10px;
 
 }
 
-/*=========================
-      FOOTER
-=========================*/
+/*====================================
+              FOOTER
+====================================*/
 
 footer{
 
-    background:rgba(0,0,0,.75);
+    margin-top:60px;
 
     text-align:center;
 
-    padding:25px;
+    padding:30px;
 
-    margin-top:50px;
+    background:rgba(0,0,0,.75);
 
-    border-top:2px solid #5bbcff;
+    border-top:2px solid #42A5F5;
 
 }
 
 footer p{
 
-    color:#d6ecff;
+    color:#ddd;
 
     font-size:16px;
 
 }
 
-/*=========================
-      BARRA DE SCROLL
-=========================*/
+/*====================================
+            ANIMACIONES
+====================================*/
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero,
+.card,
+details,
+#biografia,
+#contacto{
+
+    animation:aparecer .9s ease;
+
+}
+
+/*====================================
+        SCROLL PERSONALIZADO
+====================================*/
 
 ::-webkit-scrollbar{
 
@@ -426,13 +550,13 @@ footer p{
 
 ::-webkit-scrollbar-track{
 
-    background:#081220;
+    background:#061320;
 
 }
 
 ::-webkit-scrollbar-thumb{
 
-    background:#5bbcff;
+    background:#42A5F5;
 
     border-radius:20px;
 
@@ -440,44 +564,13 @@ footer p{
 
 ::-webkit-scrollbar-thumb:hover{
 
-    background:#8fd3ff;
+    background:#64B5F6;
 
 }
 
-/*=========================
-      ANIMACIONES
-=========================*/
-
-@keyframes aparecer{
-
-    from{
-
-        opacity:0;
-        transform:translateY(40px);
-
-    }
-
-    to{
-
-        opacity:1;
-        transform:translateY(0);
-
-    }
-
-}
-
-.inicio,
-.unidad,
-.bio,
-.contacto{
-
-    animation:aparecer 1s ease;
-
-}
-
-/*=========================
-      RESPONSIVE
-=========================*/
+/*====================================
+          RESPONSIVE
+====================================*/
 
 @media(max-width:900px){
 
@@ -497,41 +590,35 @@ nav ul{
 
 }
 
-.inicio{
+.hero{
 
-    flex-direction:column;
-
-    text-align:center;
+    padding:30px;
 
 }
 
-.informacion h1{
+.perfil img{
 
-    font-size:32px;
+    width:200px;
 
-}
-
-.foto img{
-
-    width:220px;
-
-    height:220px;
+    height:200px;
 
 }
 
-summary{
+.perfil h1{
 
-    flex-direction:column;
-
-    align-items:flex-start;
-
-    gap:15px;
+    font-size:30px;
 
 }
 
-.estrellas{
+.titulo{
 
-    font-size:24px;
+    font-size:30px;
+
+}
+
+.contenedor{
+
+    grid-template-columns:1fr;
 
 }
 
@@ -545,25 +632,18 @@ body{
 
 }
 
-.titulo,
-.bio h2,
-.contacto h2{
+summary{
 
-    font-size:28px;
+    font-size:17px;
 
 }
 
-.informacion h1{
+.boton{
 
-    font-size:26px;
+    width:100%;
 
-}
-
-.informacion p{
-
-    font-size:16px;
+    text-align:center;
 
 }
 
 }
-
