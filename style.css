@@ -380,5 +380,43 @@ nav ul{
     color:#00e5ff;
     text-shadow:0 0 10px #00e5ff;
 }
+.tema{
+    width:90%;
+    margin:20px auto;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(0,229,255,.35);
+    border-radius:18px;
+    backdrop-filter:blur(15px);
+    padding:18px;
+    transition:.3s;
+}
+
+.tema:hover{
+    box-shadow:0 0 20px #00e5ff;
+}
+
+.tema summary{
+    cursor:pointer;
+    list-style:none;
+    font-size:22px;
+    font-family:'Orbitron',sans-serif;
+    color:#00e5ff;
+    font-weight:bold;
+}
+
+.tema summary::-webkit-details-marker{
+    display:none;
+}
+
+.tema h3{
+    margin-top:20px;
+    color:#00e5ff;
+}
+
+.tema p{
+    margin-top:10px;
+    line-height:1.8;
+    color:#f0f0f0;
+}
 
 
