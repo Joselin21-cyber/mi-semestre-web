@@ -373,5 +373,12 @@ nav ul{
 }
 
 }
+.frase{
+    margin-top:25px;
+    font-size:20px;
+    font-style:italic;
+    color:#00e5ff;
+    text-shadow:0 0 10px #00e5ff;
+}
 
 
