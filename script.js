@@ -1,43 +1,22 @@
-// =============================
+// ======================================
 // DESPLAZAMIENTO SUAVE DEL MENÚ
-// =============================
+// ======================================
 
-document.querySelectorAll("nav a").forEach(enlace => {
+document.querySelectorAll('nav a').forEach(enlace => {
 
-    enlace.addEventListener("click", function(e){
+    enlace.addEventListener('click', function(e){
 
-        e.preventDefault();
+        const destino = document.querySelector(this.getAttribute('href'));
 
-        const destino = document.querySelector(this.getAttribute("href"));
+        if(destino){
 
-        destino.scrollIntoView({
+            e.preventDefault();
 
-            behavior:"smooth"
+            destino.scrollIntoView({
 
-        });
+                behavior:'smooth'
 
-    });
-
-});
-
-// =============================
-// ANIMACIÓN AL ABRIR TEMAS
-// =============================
-
-const detalles = document.querySelectorAll("details");
-
-detalles.forEach(detalle =>{
-
-    detalle.addEventListener("toggle",function(){
-
-        if(this.open){
-
-            this.style.boxShadow="0 0 20px rgba(91,188,255,.5)";
-            this.style.transition=".4s";
-
-        }else{
-
-            this.style.boxShadow="none";
+            });
 
         }
 
@@ -45,31 +24,57 @@ detalles.forEach(detalle =>{
 
 });
 
-// =============================
+// ======================================
+// EFECTO AL ABRIR DETAILS
+// ======================================
+
+const detalles = document.querySelectorAll("details");
+
+detalles.forEach(detalle=>{
+
+    detalle.addEventListener("toggle",function(){
+
+        if(this.open){
+
+            this.style.transform="scale(1.01)";
+            this.style.transition=".3s";
+
+        }else{
+
+            this.style.transform="scale(1)";
+
+        }
+
+    });
+
+});
+
+// ======================================
 // BOTÓN VOLVER ARRIBA
-// =============================
+// ======================================
 
 const boton = document.createElement("button");
 
-boton.innerHTML = "↑";
+boton.innerHTML="⬆";
 
-boton.id = "arriba";
+boton.className="boton-arriba";
 
 document.body.appendChild(boton);
 
 boton.style.position="fixed";
-boton.style.bottom="30px";
-boton.style.right="30px";
-boton.style.width="50px";
-boton.style.height="50px";
+boton.style.bottom="25px";
+boton.style.right="25px";
+boton.style.width="55px";
+boton.style.height="55px";
 boton.style.borderRadius="50%";
 boton.style.border="none";
 boton.style.cursor="pointer";
-boton.style.background="#5bbcff";
-boton.style.color="white";
 boton.style.fontSize="22px";
+boton.style.background="#1565C0";
+boton.style.color="white";
 boton.style.display="none";
-boton.style.boxShadow="0 0 15px rgba(91,188,255,.6)";
+boton.style.boxShadow="0 0 15px rgba(66,165,245,.6)";
+boton.style.zIndex="9999";
 
 window.addEventListener("scroll",()=>{
 
@@ -97,12 +102,39 @@ boton.addEventListener("click",()=>{
 
 });
 
-// =============================
-// MENSAJE DE BIENVENIDA
-// =============================
+// ======================================
+// ANIMACIÓN DE APARICIÓN
+// ======================================
 
-window.onload = ()=>{
+const elementos = document.querySelectorAll(".card, details, .hero");
 
-    console.log("Portafolio cargado correctamente.");
+const observador = new IntersectionObserver((entradas)=>{
 
-};
+    entradas.forEach(entrada=>{
+
+        if(entrada.isIntersecting){
+
+            entrada.target.style.opacity="1";
+            entrada.target.style.transform="translateY(0)";
+
+        }
+
+    });
+
+});
+
+elementos.forEach(elemento=>{
+
+    elemento.style.opacity="0";
+    elemento.style.transform="translateY(40px)";
+    elemento.style.transition=".8s";
+
+    observador.observe(elemento);
+
+});
+
+// ======================================
+// MENSAJE EN CONSOLA
+// ======================================
+
+console.log("Portafolio cargado correctamente.");
