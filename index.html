@@ -1,141 +1,217 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Portafolio Académico | Joselin Paola González Agualongo</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Iconos -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-  <link rel="stylesheet" href="style.css?v=2">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- ====================== -->
+<!--        HEADER          -->
+<!-- ====================== -->
+
 <header>
 
-<nav>
+    <nav>
 
-<h2 class="logo">
-<i class="fas fa-laptop-code"></i> Mi Portafolio
-</h2>
+        <div class="logo">
 
-<ul>
+            <i class="fas fa-microchip"></i>
 
-<li><a href="#inicio">Inicio</a></li>
+            <span>Cyber Portfolio</span>
 
-<li><a href="#unidades">Unidades</a></li>
+        </div>
 
-<li><a href="#biografia">Biografía</a></li>
+        <ul>
 
-<li><a href="#contacto">Contacto</a></li>
+            <li><a href="#inicio">Inicio</a></li>
 
-</ul>
+            <li><a href="#unidades">Unidades</a></li>
 
-</nav>
+            <li><a href="#biografia">Biografía</a></li>
+
+            <li><a href="#contacto">Contacto</a></li>
+
+        </ul>
+
+    </nav>
 
 </header>
 
+<!-- ====================== -->
+<!--       HERO             -->
+<!-- ====================== -->
+
 <section class="hero" id="inicio">
 
-<div class="perfil">
+    <div class="hero-texto">
 
-<img src="foto.png" alt="Mi Foto">
+        <h3>PORTAFOLIO ACADÉMICO</h3>
 
-<h1>Joselin Paola González Agualongo</h1>
+        <h1>
+            JOSELIN PAOLA
+            <br>
+            GONZÁLEZ AGUALONGO
+        </h1>
 
-<h3>Estudiante de Ingeniería en Software</h3>
+        <p>
 
-<p>
-Universidad Técnica de Cotopaxi
-</p>
+            Estudiante de Ingeniería en Sistemas
+            apasionada por la programación,
+            los algoritmos y el desarrollo web.
 
-<p>
-Asignatura: Programación y Algoritmia
-</p>
+        </p>
 
-</div>
+        <a href="#unidades" class="btn-principal">
+
+            Explorar Portafolio
+
+        </a>
+
+    </div>
+
+    <div class="hero-imagen">
+
+        <div class="circulo">
+
+            <img src="foto.png" alt="Foto">
+
+        </div>
+
+    </div>
 
 </section>
+
+<!-- ====================== -->
+<!--      UNIDADES          -->
+<!-- ====================== -->
 
 <section id="unidades">
 
 <h2 class="titulo">
-Unidades de Aprendizaje
+
+Mis Unidades
+
 </h2>
 
 <div class="contenedor">
 
 <div class="card">
 
-<h2>📘 Unidad 1</h2>
+<i class="fas fa-desktop icono"></i>
+
+<h2>Unidad 1</h2>
 
 <p>
-Arquitectura del Computador y Sistemas Operativos
+
+Arquitectura del computador,
+sistemas operativos,
+álgebra de Boole,
+aritmética binaria
+y conversiones.
+
 </p>
 
-<div class="stars">
+<div class="estrellas">
 
-★★★★★
+⭐⭐⭐✨
 
 </div>
 
 <p class="nota">
-⭐⭐⭐✨ (3.5)
+
+Calificación: 3.5 / 5
+
 </p>
 
 <a href="unidad1.html" class="boton">
-Ver Unidad
+
+Entrar
+
 </a>
 
 </div>
 
 <div class="card">
 
-<h2>📗 Unidad 2</h2>
+<i class="fas fa-code icono"></i>
+
+<h2>Unidad 2</h2>
 
 <p>
-Algoritmos y Diagramas de Flujo
+
+Algoritmos,
+diagramas de flujo,
+pseudocódigo
+y modelado de problemas.
+
 </p>
 
-<div class="stars">
+<div class="estrellas">
 
-★★★★★
+⭐⭐⭐⭐✨
 
 </div>
 
 <p class="nota">
-⭐⭐⭐⭐✨ (4.5)
+
+Calificación: 4.5 / 5
+
 </p>
 
 <a href="unidad2.html" class="boton">
-Ver Unidad
+
+Entrar
+
 </a>
 
 </div>
 
 <div class="card">
 
-<h2>📕 Unidad 3</h2>
+<i class="fab fa-python icono"></i>
+
+<h2>Unidad 3</h2>
 
 <p>
-Programación en Python
+
+Paradigmas de programación,
+Python,
+operadores
+y estructuras de control.
+
 </p>
 
-<div class="stars">
+<div class="estrellas">
 
-★★★★★
+⭐⭐☆☆☆
 
 </div>
 
 <p class="nota">
-⭐⭐☆☆☆ (2)
+
+Calificación: 2 / 5
+
 </p>
 
 <a href="unidad3.html" class="boton">
-Ver Unidad
+
+Entrar
+
 </a>
 
 </div>
@@ -143,40 +219,155 @@ Ver Unidad
 </div>
 
 </section>
+<!-- ====================== -->
+<!--      BIOGRAFÍA         -->
+<!-- ====================== -->
 
 <section id="biografia">
 
-<h2 class="titulo">
-Mi Biografía
-</h2>
+    <h2 class="titulo">Sobre Mí</h2>
 
-<p class="bio">
+    <div class="bio-card">
 
-Hola, soy <strong>Joselin Paola González Agualongo</strong>, estudiante de Ingeniería en Software en la Universidad Técnica de Cotopaxi. Me considero una persona responsable, curiosa y con muchas ganas de aprender. Durante este ciclo académico he fortalecido mis conocimientos en arquitectura del computador, algoritmos y programación en Python. Mi objetivo es seguir desarrollando habilidades que me permitan crear proyectos innovadores y continuar creciendo profesionalmente.
+        <p>
+            Soy <strong>Joselin Paola González Agualongo</strong>,
+            estudiante de Ingeniería en Sistemas con interés en el
+            desarrollo de software, programación y diseño web.
+        </p>
 
-</p>
+        <p>
+            Durante este semestre aprendí sobre arquitectura de computadores,
+            algoritmos, pseudocódigo, Python y estructuras de control,
+            fortaleciendo mis habilidades para resolver problemas mediante
+            programación.
+        </p>
+
+    </div>
 
 </section>
+
+<!-- ====================== -->
+<!--      HABILIDADES       -->
+<!-- ====================== -->
+
+<section id="habilidades">
+
+    <h2 class="titulo">Habilidades</h2>
+
+    <div class="skills">
+
+        <div class="skill">
+            <span>HTML</span>
+            <div class="barra">
+                <div class="progreso html">90%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span>CSS</span>
+            <div class="barra">
+                <div class="progreso css">85%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span>Python</span>
+            <div class="barra">
+                <div class="progreso python">70%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span>Algoritmos</span>
+            <div class="barra">
+                <div class="progreso algoritmos">88%</div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ====================== -->
+<!--      TECNOLOGÍAS       -->
+<!-- ====================== -->
+
+<section id="tecnologias">
+
+    <h2 class="titulo">Tecnologías</h2>
+
+    <div class="iconos-tech">
+
+        <div class="tech">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+        </div>
+
+        <div class="tech">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+        </div>
+
+        <div class="tech">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+        </div>
+
+        <div class="tech">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ====================== -->
+<!--       CONTACTO         -->
+<!-- ====================== -->
 
 <section id="contacto">
 
-<h2 class="titulo">
-Contacto
-</h2>
+    <h2 class="titulo">Contacto</h2>
 
-<p><i class="fas fa-user"></i> Joselin Paola González Agualongo</p>
+    <div class="contacto-card">
 
-<p><i class="fas fa-university"></i> Universidad Técnica de Cotopaxi</p>
+        <p>
+            <i class="fas fa-user"></i>
+            Joselin Paola González Agualongo
+        </p>
 
-<p><i class="fas fa-laptop-code"></i> Ingeniería en Software</p>
+        <p>
+            <i class="fas fa-envelope"></i>
+            tucorreo@ejemplo.com
+        </p>
+
+        <p>
+            <i class="fas fa-graduation-cap"></i>
+            Ingeniería en Sistemas
+        </p>
+
+    </div>
 
 </section>
 
+<!-- ====================== -->
+<!--        FOOTER          -->
+<!-- ====================== -->
+
 <footer>
 
-<p>
-© 2026 | Portafolio Académico
-</p>
+    <p>
+
+        © 2026 | Portafolio Académico
+
+    </p>
+
+    <p>
+
+        Desarrollado por Joselin Paola González Agualongo
+
+    </p>
 
 </footer>
 
