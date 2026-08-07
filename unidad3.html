@@ -1,71 +1,47 @@
-<!DOCTYPE html>
-<html lang="es">
+<section>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidad 3 | Portafolio Académico</title>
+<h2 class="titulo">Unidad 3</h2>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+<div class="contenedor">
 
-<body>
+<details class="tema">
 
-<header>
-
-    <h1>📕 Unidad 3</h1>
-
-    <p>Introducción a la Programación</p>
-
-    <div class="calificacion">
-        ⭐⭐☆☆☆ <strong>2.0 / 5</strong>
-    </div>
-
-    <a href="index.html" class="boton">⬅ Volver al Inicio</a>
-
-</header>
-
-<main>
-
-<details>
-
-<summary>Lenguajes y Paradigmas de Programación</summary>
+<summary>💻 Lenguajes y Paradigmas de Programación</summary>
 
 <h3>Descripción</h3>
 
 <p>
-Los lenguajes de programación permiten crear programas que resuelven diferentes problemas mediante instrucciones que la computadora puede interpretar.
+Los lenguajes de programación permiten crear programas mediante instrucciones que la computadora puede interpretar.
 </p>
 
 <h3>Desarrollo</h3>
 
 <p>
-Se estudiaron los diferentes paradigmas de programación, como el estructurado, orientado a objetos y funcional, comprendiendo sus características y aplicaciones.
+Existen diferentes paradigmas como programación estructurada, orientada a objetos, funcional y lógica. Cada uno ofrece distintas formas de resolver problemas.
 </p>
 
 <h3>Ejemplo</h3>
 
 <p>
-Ejemplos de lenguajes: Python, Java, C++, JavaScript y C#.
+Python es un lenguaje multiparadigma porque permite programar de forma estructurada y orientada a objetos.
 </p>
 
 </details>
 
-<details>
+<details class="tema">
 
-<summary>Introducción a la Programación en Python</summary>
+<summary>🐍 Introducción a Python</summary>
 
 <h3>Descripción</h3>
 
 <p>
-Python es un lenguaje de programación sencillo, versátil y ampliamente utilizado para desarrollar aplicaciones, automatizar tareas y analizar datos.
+Python es un lenguaje de programación de alto nivel, sencillo y fácil de aprender.
 </p>
 
 <h3>Desarrollo</h3>
 
 <p>
-Durante esta unidad se aprendió la sintaxis básica de Python, la creación de variables, la impresión de datos en pantalla y la estructura de un programa.
+Se utiliza para crear aplicaciones, páginas web, inteligencia artificial, análisis de datos y automatización.
 </p>
 
 <h3>Ejemplo</h3>
@@ -76,20 +52,22 @@ print("Hola Mundo")
 
 </details>
 
-<details>
+<details class="tema">
 
-<summary>Operadores Algebraicos, Relacionales y Lógicos</summary>
+<summary>➕ Operadores Algebraicos, Relacionales y Lógicos</summary>
 
 <h3>Descripción</h3>
 
 <p>
-Los operadores permiten realizar cálculos matemáticos, comparar valores y combinar condiciones para tomar decisiones dentro de un programa.
+Los operadores permiten realizar cálculos y comparar valores dentro de un programa.
 </p>
 
 <h3>Desarrollo</h3>
 
 <p>
-Se trabajó con operadores aritméticos (+, -, *, /), relacionales (>, <, ==) y lógicos (AND, OR, NOT), aplicándolos en diferentes ejercicios prácticos.
+Algebraicos: +, -, *, /, %<br>
+Relacionales: ==, !=, >, <, >=, <=<br>
+Lógicos: and, or, not
 </p>
 
 <h3>Ejemplo</h3>
@@ -100,53 +78,54 @@ b = 5
 
 print(a + b)
 print(a > b)
-  </pre>
+print(a > 5 and b < 10)
+</pre>
 
 </details>
 
-<details>
+<details class="tema">
 
-<summary>Estructuras de Control Condicionales</summary>
+<summary>🔀 Estructuras Condicionales</summary>
 
 <h3>Descripción</h3>
 
 <p>
-Las estructuras condicionales permiten que un programa tome decisiones dependiendo de si una condición es verdadera o falsa.
+Permiten tomar decisiones dependiendo de si una condición es verdadera o falsa.
 </p>
 
 <h3>Desarrollo</h3>
 
 <p>
-Se aprendió a utilizar las instrucciones <strong>if</strong>, <strong>elif</strong> y <strong>else</strong> para controlar el flujo de ejecución de un programa según diferentes condiciones.
+Las más utilizadas son <strong>if</strong>, <strong>elif</strong> y <strong>else</strong>.
 </p>
 
 <h3>Ejemplo</h3>
 
 <pre>
-nota = 8
+edad = 18
 
-if nota >= 7:
-    print("Aprobado")
+if edad >= 18:
+    print("Mayor de edad")
 else:
-    print("Reprobado")
+    print("Menor de edad")
 </pre>
 
 </details>
 
-<details>
+<details class="tema">
 
-<summary>Estructuras de Control Repetitivas</summary>
+<summary>🔁 Estructuras Repetitivas</summary>
 
 <h3>Descripción</h3>
 
 <p>
-Las estructuras repetitivas permiten ejecutar un bloque de instrucciones varias veces hasta que se cumpla una condición o durante un número determinado de repeticiones.
+Permiten repetir un conjunto de instrucciones varias veces.
 </p>
 
 <h3>Desarrollo</h3>
 
 <p>
-En esta unidad se estudiaron los ciclos <strong>for</strong> y <strong>while</strong>, aprendiendo a utilizarlos para automatizar tareas repetitivas y recorrer colecciones de datos.
+Las estructuras más comunes son <strong>for</strong> y <strong>while</strong>.
 </p>
 
 <h3>Ejemplo</h3>
@@ -158,21 +137,16 @@ for i in range(5):
 
 </details>
 
-</main>
+</div>
 
-<footer>
+</section>
 
-<p>
-© 2026 | Unidad 3 - Portafolio Académico
-</p>
+<section style="text-align:center;padding:50px;">
 
-<a href="index.html" class="boton">
-⬅ Regresar al Inicio
+<a href="index.html" class="btn-principal">
+
+⬅ Volver al Portafolio
+
 </a>
 
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+</section>
