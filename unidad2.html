@@ -1,165 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unidad 2 | Portafolio Académico</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;color:white;min-height:100vh;background:linear-gradient(rgba(3,8,20,.90),rgba(3,8,20,.95)),radial-gradient(circle at top,#063b52,#030814 65%)}
+header{width:100%;padding:20px 7%;background:rgba(3,8,20,.85);border-bottom:1px solid rgba(0,229,255,.3);box-shadow:0 0 20px rgba(0,229,255,.15);position:sticky;top:0;z-index:100}
+nav{display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Orbitron',sans-serif;font-size:22px;color:#00e5ff;text-shadow:0 0 15px #00e5ff}
+.inicio{text-decoration:none;color:white;padding:10px 20px;border:1px solid #00e5ff;border-radius:25px;transition:.3s}
+.inicio:hover{background:#00e5ff;color:#031018;box-shadow:0 0 20px #00e5ff}
+.hero{text-align:center;padding:90px 20px 60px}
+.hero h1{font-family:'Orbitron',sans-serif;font-size:48px;color:#00e5ff;text-shadow:0 0 25px #00e5ff;margin-bottom:20px}
+.hero p{max-width:700px;margin:auto;color:#d9eaff;font-size:18px;line-height:1.8}
+.titulo{text-align:center;font-family:'Orbitron',sans-serif;color:#00e5ff;font-size:30px;margin-bottom:35px;text-shadow:0 0 15px #00e5ff}
+.contenedor{width:90%;max-width:950px;margin:auto;padding-bottom:60px}
+.tema{margin:18px 0;padding:20px;background:rgba(255,255,255,.07);border:1px solid rgba(0,229,255,.35);border-radius:18px;backdrop-filter:blur(12px);transition:.35s}
+.tema:hover,.tema[open]{border-color:#00e5ff;box-shadow:0 0 25px rgba(0,229,255,.25)}
+.tema summary{cursor:pointer;list-style:none;font-family:'Orbitron',sans-serif;font-size:19px;font-weight:bold;color:#00e5ff;padding:5px}
+.tema summary::-webkit-details-marker{display:none}
+.tema summary::before{content:"▶ ";color:#00e5ff}
+.tema[open] summary::before{content:"▼ "}
+.tema h3{color:#00e5ff;margin-top:25px;margin-bottom:8px;font-size:18px}
+.tema p{color:#e7eef5;line-height:1.8;margin-bottom:10px}
+.tema ul{margin-left:25px;line-height:2;color:#e7eef5}
+.tema pre{background:#02050c;border-left:3px solid #00e5ff;padding:18px;border-radius:10px;color:#65f5ff;overflow-x:auto;margin-top:10px}
+.volver{text-align:center;padding:30px 20px 70px}
+.boton{display:inline-block;text-decoration:none;color:white;background:linear-gradient(90deg,#007bff,#00e5ff);padding:14px 30px;border-radius:30px;font-weight:bold;transition:.3s;box-shadow:0 0 20px rgba(0,229,255,.4)}
+.boton:hover{transform:scale(1.05);box-shadow:0 0 30px #00e5ff}
+footer{text-align:center;padding:30px;background:#02050c;border-top:1px solid rgba(0,229,255,.25);color:#b9c9d8}
+footer strong{color:#00e5ff}
+@media(max-width:600px){.hero{padding:65px 18px 45px}.hero h1{font-size:34px}.hero p{font-size:15px}.titulo{font-size:24px}.tema summary{font-size:16px}.tema{padding:16px}}
+</style>
+</head>
+<body>
+<header><nav><div class="logo">💻 MI PORTAFOLIO</div><a class="inicio" href="index.html">← Inicio</a></nav></header>
+<section class="hero">
+<h1>UNIDAD 2</h1>
+<p>Algoritmos, herramientas de modelación y resolución de problemas.<br>Haz clic en cada tema para consultar su descripción, desarrollo y ejemplo.</p>
+</section>
 <section>
-
-<h2 class="titulo">Unidad 2</h2>
-
+<h2 class="titulo">📚 Temas de la Unidad 2</h2>
 <div class="contenedor">
 
 <details class="tema">
-
 <summary>🧩 Algoritmos</summary>
-
-<h3>Descripción</h3>
-
-<p>
-Un algoritmo es un conjunto de pasos ordenados y finitos que permiten resolver un problema o realizar una tarea.
-</p>
-
-<h3>Desarrollo</h3>
-
-<p>
-Los algoritmos deben seguir una secuencia lógica para obtener un resultado correcto. Son la base de cualquier programa informático.
-</p>
-
-<h3>Ejemplo</h3>
-
-<p>
-Algoritmo para sumar dos números:
-<br>1. Leer A.
-<br>2. Leer B.
-<br>3. Sumar A + B.
-<br>4. Mostrar el resultado.
-</p>
-
+<h3>📖 Descripción</h3><p>Un algoritmo es un conjunto ordenado y finito de pasos que permite resolver un problema o realizar una tarea.</p>
+<h3>📝 Desarrollo</h3><p>Para construir un algoritmo primero se identifica el problema, después se determinan los datos de entrada, el proceso y la salida. Los pasos deben seguir una secuencia lógica y terminar después de un número determinado de instrucciones.</p>
+<h3>💡 Ejemplo</h3><p>Algoritmo para sumar dos números: 1) leer A, 2) leer B, 3) calcular A + B y 4) mostrar el resultado.</p>
 </details>
 
 <details class="tema">
-
 <summary>📋 Características de los Algoritmos</summary>
-
-<h3>Descripción</h3>
-
-<p>
-Todo algoritmo debe cumplir ciertas características para funcionar correctamente.
-</p>
-
-<h3>Desarrollo</h3>
-
-<p>
-Las principales características son:
-</p>
-
-<ul>
-<li>Preciso.</li>
-<li>Definido.</li>
-<li>Finito.</li>
-<li>Ordenado.</li>
-<li>Eficiente.</li>
-</ul>
-
-<h3>Ejemplo</h3>
-
-<p>
-Una receta de cocina es un algoritmo porque sigue pasos específicos para obtener un resultado.
-</p>
-
+<h3>📖 Descripción</h3><p>Los algoritmos deben cumplir características que permitan comprenderlos y ejecutarlos correctamente.</p>
+<h3>📝 Desarrollo</h3><p>Entre sus características principales están ser precisos, definidos, finitos, ordenados y efectivos. Cada paso debe indicar claramente qué hacer y el algoritmo debe producir un resultado.</p>
+<h3>💡 Ejemplo</h3><p>Una receta de cocina es un ejemplo cotidiano: contiene ingredientes de entrada, pasos ordenados y un resultado final.</p>
 </details>
 
 <details class="tema">
-
 <summary>📊 Diagramas de Flujo</summary>
-
-<h3>Descripción</h3>
-
-<p>
-Son representaciones gráficas de un algoritmo utilizando símbolos estandarizados.
-</p>
-
-<h3>Desarrollo</h3>
-
-<p>
-Permiten visualizar fácilmente el proceso de solución de un problema antes de programarlo.
-</p>
-
-<h3>Ejemplo</h3>
-
-<p>
-Inicio → Leer número → ¿Es mayor que 0? → Mostrar resultado → Fin.
-</p>
-
+<h3>📖 Descripción</h3><p>Un diagrama de flujo representa gráficamente los pasos y decisiones de un algoritmo mediante símbolos.</p>
+<h3>📝 Desarrollo</h3><p>Los símbolos más usados son el óvalo para inicio y fin, el rectángulo para procesos, el paralelogramo para entrada o salida y el rombo para decisiones. Las flechas indican el orden del proceso.</p>
+<h3>💡 Ejemplo</h3><p>Para saber si un número es positivo: Inicio → Leer número → ¿número > 0? → Sí: mostrar 'positivo' → No: mostrar 'no positivo' → Fin.</p>
 </details>
 
 <details class="tema">
-
 <summary>📝 Pseudocódigo</summary>
-
-<h3>Descripción</h3>
-
-<p>
-Es una forma de escribir algoritmos utilizando lenguaje sencillo, sin depender de un lenguaje de programación específico.
-</p>
-
-<h3>Desarrollo</h3>
-
-<p>
-Facilita la planificación del programa antes de escribir el código real.
-</p>
-
-<h3>Ejemplo</h3>
-
-<p>
-
-Inicio<br>
-Leer edad<br>
-Si edad ≥ 18 Entonces<br>
-&nbsp;&nbsp;Mostrar "Mayor de edad"<br>
-Si no<br>
-&nbsp;&nbsp;Mostrar "Menor de edad"<br>
-Fin
-
-</p>
-
+<h3>📖 Descripción</h3><p>El pseudocódigo permite escribir un algoritmo con palabras sencillas y estructuras parecidas a las de un programa, sin depender de un lenguaje específico.</p>
+<h3>📝 Desarrollo</h3><p>Sirve para planificar una solución antes de programarla. Permite concentrarse en la lógica del problema sin preocuparse todavía por la sintaxis de Python, Java u otro lenguaje.</p>
+<h3>💡 Ejemplo</h3><p>Pseudocódigo para saber si una persona es mayor de edad: Leer edad; Si edad >= 18 entonces mostrar 'Mayor de edad'; si no, mostrar 'Menor de edad'; Fin.</p>
 </details>
 
 <details class="tema">
-
 <summary>💡 Modelado de Problemas</summary>
-
-<h3>Descripción</h3>
-
-<p>
-Consiste en analizar un problema para encontrar la mejor forma de resolverlo mediante un algoritmo.
-</p>
-
-<h3>Desarrollo</h3>
-
-<p>
-Se identifican los datos de entrada, el proceso y la salida esperada antes de desarrollar el programa.
-</p>
-
-<h3>Ejemplo</h3>
-
-<p>
-Problema: Calcular el promedio de tres notas.
-<br><br>
-Entrada: Nota1, Nota2 y Nota3.
-<br>
-Proceso: (Nota1 + Nota2 + Nota3) / 3.
-<br>
-Salida: Promedio.
-</p>
-
+<h3>📖 Descripción</h3><p>Modelar un problema significa analizarlo y representarlo de manera organizada para encontrar una solución.</p>
+<h3>📝 Desarrollo</h3><p>Primero se identifica qué se necesita resolver. Luego se determinan las entradas, el procesamiento y las salidas. Finalmente se diseña un algoritmo, diagrama o pseudocódigo que represente la solución.</p>
+<h3>💡 Ejemplo</h3><p>Para calcular el promedio de tres notas: entradas = nota1, nota2 y nota3; proceso = (nota1 + nota2 + nota3) / 3; salida = promedio.</p>
 </details>
 
 </div>
-
 </section>
+<div class="volver"><a href="index.html" class="boton">⬅ Volver al Portafolio</a></div>
+<footer><p>© 2026 — <strong>Joselin Paola González Agualongo</strong></p><p>Portafolio Académico</p></footer>
+</body>
+</html>
 
-<section style="text-align:center; padding:50px;">
 
-<a href="index.html" class="btn-principal">
-
-⬅ Volver al Portafolio
-
-</a>
-
-</section>
