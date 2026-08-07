@@ -1,152 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unidad 3 | Portafolio Académico</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;color:white;min-height:100vh;background:linear-gradient(rgba(3,8,20,.90),rgba(3,8,20,.95)),radial-gradient(circle at top,#063b52,#030814 65%)}
+header{width:100%;padding:20px 7%;background:rgba(3,8,20,.85);border-bottom:1px solid rgba(0,229,255,.3);box-shadow:0 0 20px rgba(0,229,255,.15);position:sticky;top:0;z-index:100}
+nav{display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Orbitron',sans-serif;font-size:22px;color:#00e5ff;text-shadow:0 0 15px #00e5ff}
+.inicio{text-decoration:none;color:white;padding:10px 20px;border:1px solid #00e5ff;border-radius:25px;transition:.3s}
+.inicio:hover{background:#00e5ff;color:#031018;box-shadow:0 0 20px #00e5ff}
+.hero{text-align:center;padding:90px 20px 60px}
+.hero h1{font-family:'Orbitron',sans-serif;font-size:48px;color:#00e5ff;text-shadow:0 0 25px #00e5ff;margin-bottom:20px}
+.hero p{max-width:700px;margin:auto;color:#d9eaff;font-size:18px;line-height:1.8}
+.titulo{text-align:center;font-family:'Orbitron',sans-serif;color:#00e5ff;font-size:30px;margin-bottom:35px;text-shadow:0 0 15px #00e5ff}
+.contenedor{width:90%;max-width:950px;margin:auto;padding-bottom:60px}
+.tema{margin:18px 0;padding:20px;background:rgba(255,255,255,.07);border:1px solid rgba(0,229,255,.35);border-radius:18px;backdrop-filter:blur(12px);transition:.35s}
+.tema:hover,.tema[open]{border-color:#00e5ff;box-shadow:0 0 25px rgba(0,229,255,.25)}
+.tema summary{cursor:pointer;list-style:none;font-family:'Orbitron',sans-serif;font-size:19px;font-weight:bold;color:#00e5ff;padding:5px}
+.tema summary::-webkit-details-marker{display:none}
+.tema summary::before{content:"▶ ";color:#00e5ff}
+.tema[open] summary::before{content:"▼ "}
+.tema h3{color:#00e5ff;margin-top:25px;margin-bottom:8px;font-size:18px}
+.tema p{color:#e7eef5;line-height:1.8;margin-bottom:10px}
+.tema ul{margin-left:25px;line-height:2;color:#e7eef5}
+.tema pre{background:#02050c;border-left:3px solid #00e5ff;padding:18px;border-radius:10px;color:#65f5ff;overflow-x:auto;margin-top:10px}
+.volver{text-align:center;padding:30px 20px 70px}
+.boton{display:inline-block;text-decoration:none;color:white;background:linear-gradient(90deg,#007bff,#00e5ff);padding:14px 30px;border-radius:30px;font-weight:bold;transition:.3s;box-shadow:0 0 20px rgba(0,229,255,.4)}
+.boton:hover{transform:scale(1.05);box-shadow:0 0 30px #00e5ff}
+footer{text-align:center;padding:30px;background:#02050c;border-top:1px solid rgba(0,229,255,.25);color:#b9c9d8}
+footer strong{color:#00e5ff}
+@media(max-width:600px){.hero{padding:65px 18px 45px}.hero h1{font-size:34px}.hero p{font-size:15px}.titulo{font-size:24px}.tema summary{font-size:16px}.tema{padding:16px}}
+</style>
+</head>
+<body>
+<header><nav><div class="logo">💻 MI PORTAFOLIO</div><a class="inicio" href="index.html">← Inicio</a></nav></header>
+<section class="hero">
+<h1>UNIDAD 3</h1>
+<p>Programación, Python, operadores y estructuras de control.<br>Haz clic en cada tema para consultar su descripción, desarrollo y ejemplo.</p>
+</section>
 <section>
-
-<h2 class="titulo">Unidad 3</h2>
-
+<h2 class="titulo">📚 Temas de la Unidad 3</h2>
 <div class="contenedor">
 
 <details class="tema">
-
 <summary>💻 Lenguajes y Paradigmas de Programación</summary>
-
-<h3>Descripción</h3>
-
-<p>
-Los lenguajes de programación permiten crear programas mediante instrucciones que la computadora puede interpretar.
-</p>
-
-<h3>Desarrollo</h3>
-
-<p>
-Existen diferentes paradigmas como programación estructurada, orientada a objetos, funcional y lógica. Cada uno ofrece distintas formas de resolver problemas.
-</p>
-
-<h3>Ejemplo</h3>
-
-<p>
-Python es un lenguaje multiparadigma porque permite programar de forma estructurada y orientada a objetos.
-</p>
-
+<h3>📖 Descripción</h3><p>Los lenguajes de programación permiten escribir instrucciones para crear software, mientras que los paradigmas son formas de organizar y pensar las soluciones.</p>
+<h3>📝 Desarrollo</h3><p>Existen paradigmas como el estructurado, orientado a objetos, funcional y lógico. Un mismo lenguaje puede soportar más de un paradigma y ofrecer distintas formas de resolver un problema.</p>
+<h3>💡 Ejemplo</h3><p>Python es multiparadigma: permite escribir programas estructurados y también crear clases y objetos mediante programación orientada a objetos.</p>
 </details>
 
 <details class="tema">
-
 <summary>🐍 Introducción a Python</summary>
-
-<h3>Descripción</h3>
-
-<p>
-Python es un lenguaje de programación de alto nivel, sencillo y fácil de aprender.
-</p>
-
-<h3>Desarrollo</h3>
-
-<p>
-Se utiliza para crear aplicaciones, páginas web, inteligencia artificial, análisis de datos y automatización.
-</p>
-
-<h3>Ejemplo</h3>
-
-<pre>
-print("Hola Mundo")
-</pre>
-
+<h3>📖 Descripción</h3><p>Python es un lenguaje de alto nivel conocido por su sintaxis clara y por ser utilizado en muchas áreas de la tecnología.</p>
+<h3>📝 Desarrollo</h3><p>Se emplea en desarrollo web, automatización, análisis de datos, inteligencia artificial y educación. Su sintaxis permite comenzar a programar con instrucciones relativamente sencillas.</p>
+<h3>💡 Ejemplo</h3><p>Un primer programa en Python puede mostrar un mensaje usando: print('Hola Mundo').</p>
 </details>
 
 <details class="tema">
-
 <summary>➕ Operadores Algebraicos, Relacionales y Lógicos</summary>
-
-<h3>Descripción</h3>
-
-<p>
-Los operadores permiten realizar cálculos y comparar valores dentro de un programa.
-</p>
-
-<h3>Desarrollo</h3>
-
-<p>
-Algebraicos: +, -, *, /, %<br>
-Relacionales: ==, !=, >, <, >=, <=<br>
-Lógicos: and, or, not
-</p>
-
-<h3>Ejemplo</h3>
-
-<pre>
-a = 10
-b = 5
-
-print(a + b)
-print(a > b)
-print(a > 5 and b < 10)
-</pre>
-
+<h3>📖 Descripción</h3><p>Los operadores permiten realizar cálculos, comparar valores y combinar condiciones dentro de un programa.</p>
+<h3>📝 Desarrollo</h3><p>Los operadores algebraicos o aritméticos incluyen +, -, *, /, %, // y **. Los relacionales permiten comparar valores como ==, !=, >, <, >= y <=. Los lógicos incluyen and, or y not.</p>
+<h3>💡 Ejemplo</h3><p>Si a = 10 y b = 5, entonces a + b produce 15, a > b produce True y a > 5 and b < 10 también produce True.</p>
 </details>
 
 <details class="tema">
-
 <summary>🔀 Estructuras Condicionales</summary>
-
-<h3>Descripción</h3>
-
-<p>
-Permiten tomar decisiones dependiendo de si una condición es verdadera o falsa.
-</p>
-
-<h3>Desarrollo</h3>
-
-<p>
-Las más utilizadas son <strong>if</strong>, <strong>elif</strong> y <strong>else</strong>.
-</p>
-
-<h3>Ejemplo</h3>
-
-<pre>
-edad = 18
-
-if edad >= 18:
-    print("Mayor de edad")
-else:
-    print("Menor de edad")
-</pre>
-
+<h3>📖 Descripción</h3><p>Las estructuras condicionales permiten que un programa tome decisiones según se cumplan o no determinadas condiciones.</p>
+<h3>📝 Desarrollo</h3><p>En Python se utilizan principalmente if, elif y else. El programa evalúa una condición y ejecuta el bloque correspondiente.</p>
+<h3>💡 Ejemplo</h3><p>Para determinar la mayoría de edad: if edad >= 18: mostrar 'Mayor de edad'; else: mostrar 'Menor de edad'.</p>
 </details>
 
 <details class="tema">
-
 <summary>🔁 Estructuras Repetitivas</summary>
-
-<h3>Descripción</h3>
-
-<p>
-Permiten repetir un conjunto de instrucciones varias veces.
-</p>
-
-<h3>Desarrollo</h3>
-
-<p>
-Las estructuras más comunes son <strong>for</strong> y <strong>while</strong>.
-</p>
-
-<h3>Ejemplo</h3>
-
-<pre>
-for i in range(5):
-    print(i)
-</pre>
-
+<h3>📖 Descripción</h3><p>Las estructuras repetitivas permiten ejecutar varias veces un conjunto de instrucciones.</p>
+<h3>📝 Desarrollo</h3><p>En Python las más utilizadas son for y while. for suele utilizarse cuando se conoce o recorre una cantidad de elementos, mientras que while repite mientras una condición sea verdadera.</p>
+<h3>💡 Ejemplo</h3><p>Con for i in range(5), el programa puede recorrer los valores 0, 1, 2, 3 y 4 y mostrar cada uno.</p>
 </details>
 
 </div>
-
 </section>
-
-<section style="text-align:center;padding:50px;">
-
-<a href="index.html" class="btn-principal">
-
-⬅ Volver al Portafolio
-
-</a>
-
-</section>
+<div class="volver"><a href="index.html" class="boton">⬅ Volver al Portafolio</a></div>
+<footer><p>© 2026 — <strong>Joselin Paola González Agualongo</strong></p><p>Portafolio Académico</p></footer>
+</body>
+    </html>
