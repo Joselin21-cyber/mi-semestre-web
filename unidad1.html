@@ -1,131 +1,734 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Unidad 1 | Portafolio Académico</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    color:white;
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(3,8,20,.90),rgba(3,8,20,.95)),
+    radial-gradient(circle at top,#063b52,#030814 65%);
+
+}
+
+/* =========================
+   CABECERA
+========================= */
+
+header{
+
+    width:100%;
+
+    padding:20px 7%;
+
+    background:rgba(3,8,20,.85);
+
+    border-bottom:1px solid rgba(0,229,255,.3);
+
+    box-shadow:0 0 20px rgba(0,229,255,.15);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:22px;
+
+    color:#00e5ff;
+
+    text-shadow:0 0 15px #00e5ff;
+
+}
+
+.inicio{
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:10px 20px;
+
+    border:1px solid #00e5ff;
+
+    border-radius:25px;
+
+    transition:.3s;
+
+}
+
+.inicio:hover{
+
+    background:#00e5ff;
+
+    color:#031018;
+
+    box-shadow:0 0 20px #00e5ff;
+
+}
+
+/* =========================
+   PORTADA
+========================= */
+
+.hero{
+
+    text-align:center;
+
+    padding:90px 20px 60px;
+
+}
+
+.hero h1{
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:48px;
+
+    color:#00e5ff;
+
+    text-shadow:0 0 25px #00e5ff;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#d9eaff;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* =========================
+   TEMAS
+========================= */
+
+.titulo{
+
+    text-align:center;
+
+    font-family:'Orbitron',sans-serif;
+
+    color:#00e5ff;
+
+    font-size:30px;
+
+    margin-bottom:35px;
+
+    text-shadow:0 0 15px #00e5ff;
+
+}
+
+.contenedor{
+
+    width:90%;
+
+    max-width:950px;
+
+    margin:auto;
+
+    padding-bottom:60px;
+
+}
+
+/* =========================
+   DESPLEGABLES
+========================= */
+
+.tema{
+
+    margin:18px 0;
+
+    padding:20px;
+
+    background:rgba(255,255,255,.07);
+
+    border:1px solid rgba(0,229,255,.35);
+
+    border-radius:18px;
+
+    backdrop-filter:blur(12px);
+
+    transition:.35s;
+
+}
+
+.tema:hover{
+
+    border-color:#00e5ff;
+
+    box-shadow:
+    0 0 15px rgba(0,229,255,.25),
+    inset 0 0 15px rgba(0,229,255,.05);
+
+}
+
+.tema[open]{
+
+    border-color:#00e5ff;
+
+    box-shadow:0 0 25px rgba(0,229,255,.25);
+
+}
+
+.tema summary{
+
+    cursor:pointer;
+
+    list-style:none;
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:19px;
+
+    font-weight:bold;
+
+    color:#00e5ff;
+
+    padding:5px;
+
+}
+
+.tema summary::-webkit-details-marker{
+
+    display:none;
+
+}
+
+.tema summary::before{
+
+    content:"▶ ";
+
+    color:#00e5ff;
+
+}
+
+.tema[open] summary::before{
+
+    content:"▼ ";
+
+}
+
+.tema h3{
+
+    color:#00e5ff;
+
+    margin-top:25px;
+
+    margin-bottom:8px;
+
+    font-size:18px;
+
+}
+
+.tema p{
+
+    color:#e7eef5;
+
+    line-height:1.8;
+
+    margin-bottom:10px;
+
+}
+
+.tema ul{
+
+    margin-left:25px;
+
+    line-height:2;
+
+    color:#e7eef5;
+
+}
+
+.tema pre{
+
+    background:#02050c;
+
+    border-left:3px solid #00e5ff;
+
+    padding:18px;
+
+    border-radius:10px;
+
+    color:#65f5ff;
+
+    overflow-x:auto;
+
+    margin-top:10px;
+
+}
+
+/* =========================
+   BOTÓN
+========================= */
+
+.volver{
+
+    text-align:center;
+
+    padding:30px 20px 70px;
+
+}
+
+.boton{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:linear-gradient(90deg,#007bff,#00e5ff);
+
+    padding:14px 30px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+    box-shadow:0 0 20px rgba(0,229,255,.4);
+
+}
+
+.boton:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 30px #00e5ff;
+
+}
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    background:#02050c;
+
+    border-top:1px solid rgba(0,229,255,.25);
+
+    color:#b9c9d8;
+
+}
+
+footer strong{
+
+    color:#00e5ff;
+
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media(max-width:600px){
+
+    .hero{
+
+        padding:65px 18px 45px;
+
+    }
+
+    .hero h1{
+
+        font-size:34px;
+
+    }
+
+    .hero p{
+
+        font-size:15px;
+
+    }
+
+    .titulo{
+
+        font-size:24px;
+
+    }
+
+    .tema summary{
+
+        font-size:16px;
+
+    }
+
+    .tema{
+
+        padding:16px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+💻 MI PORTAFOLIO
+
+</div>
+
+<a class="inicio" href="index.html">
+
+← Inicio
+
+</a>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h1>UNIDAD 1</h1>
+
+<p>
+
+Arquitectura del computador y fundamentos de informática.
+
+<br>
+
+Haz clic en cada tema para consultar su descripción, desarrollo y ejemplo.
+
+</p>
+
+</section>
+
+
 <section>
 
-<h2 class="titulo">Unidad 1</h2>
+<h2 class="titulo">
+
+📚 Temas de la Unidad 1
+
+</h2>
+
 
 <div class="contenedor">
 
+
+<!-- TEMA 1 -->
+
 <details class="tema">
 
-<summary>🖥 Modelo de Von Neumann y Harvard</summary>
+<summary>Modelo de Von Neumann y Harvard</summary>
 
-<h3>Descripción</h3>
+<h3>📖 Descripción</h3>
 
 <p>
-Son dos arquitecturas utilizadas para organizar el funcionamiento de un computador.
+
+Son dos modelos de arquitectura utilizados para organizar los componentes y el funcionamiento de un computador.
+
 </p>
 
-<h3>Desarrollo</h3>
+<h3>📝 Desarrollo</h3>
 
 <p>
-El modelo de Von Neumann utiliza una sola memoria para almacenar datos e instrucciones, mientras que el modelo Harvard utiliza memorias independientes para cada una, permitiendo ejecutar procesos con mayor rapidez.
+
+El modelo de Von Neumann utiliza una memoria única para almacenar tanto las instrucciones como los datos. El procesador obtiene de esa memoria las instrucciones que debe ejecutar y los datos necesarios.
+
+En cambio, la arquitectura Harvard utiliza memorias separadas para las instrucciones y para los datos. Esto permite acceder a ambos de manera independiente y puede mejorar el rendimiento.
+
 </p>
 
-<h3>Ejemplo</h3>
+<h3>💡 Ejemplo</h3>
 
 <p>
-La mayoría de computadoras personales utilizan la arquitectura Von Neumann, mientras que muchos microcontroladores utilizan la arquitectura Harvard.
+
+Un computador personal puede utilizar una arquitectura basada en Von Neumann, mientras que muchos microcontroladores utilizan una arquitectura Harvard.
+
 </p>
 
 </details>
 
+
+<!-- TEMA 2 -->
+
 <details class="tema">
 
-<summary>💻 Sistemas Operativos</summary>
+<summary>Sistemas Operativos</summary>
 
-<h3>Descripción</h3>
+<h3>📖 Descripción</h3>
 
 <p>
-Es el software encargado de administrar el hardware y los recursos del computador.
+
+Un sistema operativo es el software principal que administra los recursos de un computador y permite que otros programas funcionen.
+
 </p>
 
-<h3>Desarrollo</h3>
+<h3>📝 Desarrollo</h3>
 
 <p>
-Gestiona la memoria, los dispositivos, los archivos y permite ejecutar programas de forma eficiente.
+
+El sistema operativo administra la memoria, el procesador, los archivos, los dispositivos de entrada y salida y los programas.
+
+También proporciona una interfaz para que el usuario pueda interactuar con el computador.
+
 </p>
 
-<h3>Ejemplo</h3>
+<h3>💡 Ejemplo</h3>
 
 <p>
-Windows 11, Ubuntu Linux y macOS.
+
+Algunos sistemas operativos conocidos son Windows, Linux, macOS, Android e iOS.
+
 </p>
 
 </details>
 
+
+<!-- TEMA 3 -->
+
 <details class="tema">
 
-<summary>🔢 Sistemas de Numeración</summary>
+<summary>Sistemas de Numeración y Conversiones</summary>
 
-<h3>Descripción</h3>
+<h3>📖 Descripción</h3>
 
 <p>
-Son diferentes formas de representar cantidades mediante símbolos.
+
+Los sistemas de numeración permiten representar cantidades mediante diferentes símbolos y reglas.
+
 </p>
 
-<h3>Desarrollo</h3>
+<h3>📝 Desarrollo</h3>
 
 <p>
-En informática se utilizan principalmente los sistemas binario, octal, decimal y hexadecimal para representar información.
+
+En informática se utiliza principalmente el sistema binario, que utiliza los números 0 y 1.
+
+También se utilizan el sistema octal y hexadecimal para representar información de una manera más compacta.
+
+El sistema decimal utiliza diez símbolos, del 0 al 9.
+
 </p>
 
-<h3>Ejemplo</h3>
+<h3>💡 Ejemplo</h3>
 
 <p>
-Decimal: 25 → Binario: 11001 → Hexadecimal: 19.
+
+Un número decimal puede convertirse a binario.
+
+</p>
+
+<pre>
+Decimal:     10
+
+Binario:     1010
+
+Octal:       12
+
+Hexadecimal: A
+</pre>
+
+</details>
+
+
+<!-- TEMA 4 -->
+
+<details class="tema">
+
+<summary>Aritmética Binaria</summary>
+
+<h3>📖 Descripción</h3>
+
+<p>
+
+La aritmética binaria consiste en realizar operaciones matemáticas utilizando solamente los valores 0 y 1.
+
+</p>
+
+<h3>📝 Desarrollo</h3>
+
+<p>
+
+Las operaciones binarias principales son suma, resta, multiplicación y división.
+
+Estas operaciones son fundamentales porque los computadores representan y procesan la información mediante bits.
+
+</p>
+
+<h3>💡 Ejemplo</h3>
+
+<p>
+
+Una suma binaria sencilla:
+
+</p>
+
+<pre>
+   1010
+ + 0011
+ ------
+   1101
+</pre>
+
+<p>
+
+Por lo tanto:
+
+<strong>1010 + 0011 = 1101</strong>
+
 </p>
 
 </details>
 
-<details class="tema">
 
-<summary>➕ Aritmética Binaria</summary>
-
-<h3>Descripción</h3>
-
-<p>
-Consiste en realizar operaciones matemáticas utilizando únicamente los dígitos 0 y 1.
-</p>
-
-<h3>Desarrollo</h3>
-
-<p>
-Se aplican reglas de suma, resta, multiplicación y división binarias para procesar información dentro del computador.
-</p>
-
-<h3>Ejemplo</h3>
-
-<p>
-1010 + 0011 = 1101
-</p>
-
-</details>
+<!-- TEMA 5 -->
 
 <details class="tema">
 
-<summary>⚙ Álgebra de Boole</summary>
+<summary>Álgebra de Boole</summary>
 
-<h3>Descripción</h3>
+<h3>📖 Descripción</h3>
 
 <p>
-Es un sistema matemático basado en valores lógicos (0 y 1).
+
+El álgebra de Boole es un sistema matemático utilizado para trabajar con valores lógicos, principalmente 0 y 1.
+
 </p>
 
-<h3>Desarrollo</h3>
+<h3>📝 Desarrollo</h3>
 
 <p>
-Permite diseñar circuitos digitales mediante operadores lógicos como AND, OR y NOT.
+
+Es muy importante en informática porque permite representar operaciones lógicas y diseñar circuitos digitales.
+
+Sus operadores principales son AND, OR y NOT.
+
 </p>
 
-<h3>Ejemplo</h3>
+<h3>💡 Ejemplo</h3>
 
-<p>
-1 AND 1 = 1<br>
-1 AND 0 = 0<br>
+<pre>
+AND
+
+1 AND 1 = 1
+1 AND 0 = 0
+
+
+OR
+
 1 OR 0 = 1
-</p>
+0 OR 0 = 0
+
+
+NOT
+
+NOT 1 = 0
+NOT 0 = 1
+</pre>
 
 </details>
+
 
 </div>
 
 </section>
+
+
+<div class="volver">
+
+<a href="index.html" class="boton">
+
+⬅ Volver al Portafolio
+
+</a>
+
+</div>
+
+
+<footer>
+
+<p>
+
+© 2026 — <strong>Joselin Paola González Agualongo</strong>
+
+</p>
+
+<p>
+
+Portafolio Académico
+
+</p>
+
+</footer>
+
+
+</body>
+
+  </html>
+
+
+
+
